@@ -1,42 +1,47 @@
-# sv
+# Pasig City Science High School
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This is the official repository of the Pasig City Science High School (PCSHS) website made by the students of Grade 12 - Dubins (Batch 16)! Note that this repository is still a work in progress and may contain some bugs. If you have any suggestions or feedback, please feel free to open an issue or submit a pull request.
 
-## Creating a project
+## Replication
 
-If you're seeing this, you've probably already done this step. Congrats!
+To replicate this website, you can follow these steps:
 
-```sh
-# create a new project
-npx sv create my-app
-```
+1. Clone this repository to your local machine by downloading the ZIP file or through Git.
+2. Once unzipped or cloned into your local directory, run the following commands:
 
-To recreate this project with the same configuration:
+    ```bash
+    npm i
+    npm run dev
+    ```
 
-```sh
-# recreate this project
-npx sv@0.12.5 create --template minimal --types ts --add tailwindcss="plugins:typography,forms" sveltekit-adapter="adapter:node" prettier eslint devtools-json --install npm ./
-```
+3. Open your browser and navigate to `http://localhost:5173` to view the website in development mode.
 
-## Developing
+## Contributing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+If you would like to contribute to this project, please follow these guidelines:
 
-```sh
-npm run dev
+1. Fork the repository and create a new branch for your feature or bug fix.
+2. Make your changes and commit them with clear and descriptive messages.
+3. Push your changes to your forked repository and open a pull request to the main repository.
+4. Ensure that your code follows the existing style and conventions of the project.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Current Contributors
 
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+|   **Development**  | **Design and Layout** |   **Content**  |   **Proofreading**  |
+|:------------------:|:---------------------:|:--------------:|:-------------------:|
+| Miguel Villegas    | Jervy Pascual         | Angel Piad     | Sophia Santiago     |
+| James Tortilla     | Leiu Gavina           | Mary Barcelona |                     |
+| Xavier Pariñas     | Thomas Tupas          | Wynona Ventura |                     |
+| Sebastian Anonical | Shannon Balaos        | Elaira Cruz    |                     |
+| Miko Marcelo       | Venice Victorino      | LJ Guarte      |                     |
+| Lhanze Lachica     | Chanelle Ramos        | Abiezer Intad  |                     |
+| Kirk Cabotaje      | Araziel Salas         | Alyson Sison   |                     |
+| Hector Robledo     | Daphne Amado          | Queensy Bien   |                     |
+|                    | Hayah Reyes           | Bhea Labro     |                     |
+|                    | Gracia Bautista       | Althea Basal   |                     |
+|                    | Charisse Manalo       | Moana Factor   |                     |
+|                    |                       | Nicole Narag   |                     |
+|                    |                       | Paula Goboy    |                     |
+|                    |                       | Treanne Zamora |                     |
+|                    |                       | Deniza Lajara  |                     |
+|                    |                       | Russell Salen  |                     |
