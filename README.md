@@ -27,14 +27,21 @@ If you would like to contribute to this project, please follow these guidelines:
 
 ## Current Contributors
 
-### Developers
-
--
-
-### Designers
-
--
-
-### Content Writers
-
--
+|   **Development**  | **Design and Layout** |   **Content**  |   **Proofreading**  |
+|:------------------:|:---------------------:|:--------------:|:-------------------:|
+| Miguel Villegas    | Jervy Pascual         | Angel Piad     | Sophia Santiago     |
+| James Tortilla     | Leiu Gavina           | Mary Barcelona |                     |
+| Xavier Pariñas     | Thomas Tupas          | Wynona Ventura |                     |
+| Sebastian Anonical | Shannon Balaos        | Elaira Cruz    |                     |
+| Miko Marcelo       | Venice Victorino      | LJ Guarte      |                     |
+| Lhanze Lachica     | Chanelle Ramos        | Abiezer Intad  |                     |
+| Kirk Cabotaje      | Araziel Salas         | Alyson Sison   |                     |
+| Hector Robledo     | Daphne Amado          | Queensy Bien   |                     |
+|                    | Hayah Reyes           | Bhea Labro     |                     |
+|                    | Gracia Bautista       | Althea Basal   |                     |
+|                    | Charisse Manalo       | Moana Factor   |                     |
+|                    |                       | Nicole Narag   |                     |
+|                    |                       | Paula Goboy    |                     |
+|                    |                       | Treanne Zamora |                     |
+|                    |                       | Deniza Lajara  |                     |
+|                    |                       | Russell Salen  |                     |
