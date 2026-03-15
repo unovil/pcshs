@@ -1,6 +1,6 @@
 <!-- 64px matches navbar's p-4 -->
-<div class="pl-20 grid grid-cols-2 text-8xl min-h-[calc(100dvh-64px)] bg-blue-100 items-center">
-  <div>
+<div class="pl-20 grid grid-cols-2 text-8xl min-h-screen bg-blue-100 items-center">
+  <div class="font-heading">
     <strong class="block">WE EXCEL.</strong>
     <strong class="block">WE SERVE.</strong>
     <strong class="block">WE LEAD.</strong>
