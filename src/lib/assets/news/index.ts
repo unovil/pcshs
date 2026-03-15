@@ -4,7 +4,7 @@ import sbf from './sbf.jpg';
 import ushat from './ushat.jpg';
 
 export const news: {
-    image: string;
+    image: string | null;
     title: string;
     date: string;
     content: string[];
@@ -57,6 +57,63 @@ export const news: {
             `As mentioned, some participants decided to open physical stores outside of school premises. The earliest to organize their setup was Oh-My-Chomai, a flavored dumpling business. Other businesses, such as Alab-Bingsu (flavored bingsu) and Thirst Ade Kit (beverages), later followed. Furthermore, certain businesses required pre-orders rather than offering on-site sales. These were Pa-still Into You (pastil onigiri), Florens Caritas (fuzzy wire flowers), and MyKookie Co. (cookie kits). 12-Dubins, on the other hand, secured a venue within PCSHS, making their photobooth easily accessible to the entire PaScian community.`,
             `Additionally, to show their unwavering support, students from lower batches (Grade 7 to 11) frequently visited their ate's and kuya's. After personally experiencing the booths, some students even posted on social media, acknowledging the tremendous effort Batch 16 put into their project.`,
             `Overall, SBF 2026 was a successful event that exceptionally demonstrated students' well-roundedness. Despite being new to the field, they exhibited a passion and dedication that perfectly embody a PaScian—one who serves, excels, and leads.`
+        ]
+    },
+    {
+        image: null,
+        date: "February 10, 2026",
+        title: "PCSHS Dominates 31st DSPC",
+        content: [
+            `Campus journalists from Pasig City Science High School (PCSHS) secured top honors during the Division Schools Press Conference (DSPC), earning the Overall Champion title and several individual awards.`,
+            `The school was also recognized as the 1st Best Performing School in English and 5th Best Performing School in Filipino, highlighting the strong performance of its student journalists in various categories.`,
+            `Several PCSHS representatives qualified for the Regional Schools Press Conference (RSPC) after placing in the top ranks of their respective events.`,
+            `Among them were Charles Dominick B. Tud, who won first place in Copyreading and Headlining (Secondary), Cherry Ann O. Malate, first place in Pagwawasto at Pag-uulo ng Balita (Secondary), Godric T. Mañgapos, first place in Science Feature Writing (Secondary), and Wynona Chrissandra Z. Ventura, first place in Pagsulat ng Kolum (Secondary).`,
+            `Other top finishers included Cris Loren S. Balhon, second place in News Writing (Secondary), Romilen P. Santander, second place in Pagsulat ng Balita (Secondary), and Jared Shia G. Sarmiento, second place in Sports Writing (Secondary).`,
+            `In the group events held on February 6, 2026, at Pasig Elementary School, the PCSHS team also achieved strong results. The school’s Collaborative Desktop Publishing (English) team emerged as champion, while the Radio Broadcasting (Filipino) team placed second with Juan Miguel Villegas and Daniella Venice Pepito hailed as Best Anchors.`,
+            `School administrators and advisers commended the campus journalists for their dedication and perseverance in representing PCSHS in the annual press conference organized under the Department of Education.`,
+            `The school also expressed appreciation to the advisers, teachers, and parents who supported the students throughout their preparation for the competition, as they continue their journey to compete at the regional level.`
+        ]
+    },
+    {
+        image: null,
+        date: "December 21, 2025",
+        title: "Environmental Christmas at PCSHS",
+        content: [
+            `The Pasig City Science High School (PCSHS) conducted its first Christmas Decoration Contest for teaching and non-teaching staff in December 2025 as part of the school’s initiative to promote environmental awareness and unity within the community.`,
+            `The contest encouraged participants to create Christmas decorations using recyclable and unused materials, highlighting creativity while promoting sustainable practices. The activity concluded on December 1, with departments presenting their decorated spaces made from discarded materials.`,
+            `The program was organized by the School Governance Council (SGC) under the leadership of its co-chairperson, Leilani C. Lucero, together with other council members who served as judges for the competition.`,
+            `Winners were selected on December 2 and were later recognized during the Gawad PCSHS held on December 19 at the school’s Audio Visual Room as part of the employees’ Christmas celebration.`,
+            `The Grade 12 faculty won first place and received ₱5,000, followed by the Grade 8 faculty in second place with ₱3,000, while the Grade 7 faculty placed third with ₱2,500. Consolation prizes were also awarded to the Grade 9, Grade 10, Grade 11, and non-teaching staff groups.`,
+            `According to the organizers, the contest aimed to strengthen cooperation and camaraderie among teachers and staff while celebrating the spirit of Christmas through creativity and collaboration.`
+        ]
+    },
+    {
+        image: null,
+        date: "November 10, 2025",
+        title: "2NE1: PCSHS Founding Anniversary",
+        content: [
+            `The Pasig City Science High School (PCSHS) celebrated its 21st Founding Anniversary, also known as “2NE1,” on November 7, 2025, at the PCSHS campus.`,
+            `The program was organized by the Supreme Secondary Learners Government (SSLG) and the Coordinating Council (CoCo), in collaboration with different school organizations. Support was also provided by the School Governance Council (SGC), School Parents-Teachers Association (SPTA), and other stakeholders.`,
+            `School principal Liza C. Caigoy delivered the opening remarks, encouraging students to enjoy the celebration and create memorable experiences during the foundation day.`,
+            `After, various carnival-themed booths prepared by school organizations were opened to students, offering games and interactive activities.`,
+            `Just like last year, another session of “Sugod Classroom: Magbayanihan Tayo!” was conducted, a raffle-style activity where selected students and their classrooms received surprise visits and prizes.`,
+            `The celebration concluded with exhibition matches between faculty, varsity players, parents, and alumni, as well as a “Perya Jamming” session featuring performances by student bands.`,
+            `The anniversary celebration aimed to bring together students, teachers, parents, and alumni while marking another milestone in the school’s history.`
+        ]
+    },
+    {
+        image: null,
+        date: "July 7, 2025",
+        title: "FreshieCon 2025: New Beginnings at PCSHS",
+        content: [
+            `FreshieCon 2025 was held at Pasig City Science High School (PCSHS) on July 4, 2025, gathering newly admitted PaScians at the school gymnasium to familiarize them with the institution and the various clubs and organizations available on campus.`,
+            `The event was organized and led by the Supreme Secondary Learner Government (SSLG), which encouraged Grade 7 students to audition and join different organizations and groups that aim to develop their talents and interests. Various clubs were also introduced during the program, presenting their goals and activities to the new students.`,
+            `Guest speaker Airene de Luna, an alumnus from the second batch of PCSHS, shared her experiences as a former PaScian and reflected on her journey during her time in the school.`,
+            `Performances were also presented by the groups Coalition, Resonate, and Fermata, showcasing their talents in dancing, playing musical instruments, and singing. The performances aimed to encourage new PaScians to audition and become part of the organizations.`,
+            `A photo booth with the theme Studio Ghibli was also prepared as part of the FreshieCon activities, allowing students to take photos and enjoy the event.`,
+            `The SSLG also launched the program “PaScian Mic,” where members discussed important information for new students, including school celebrations, traditions, facilities, and the history of PCSHS.`,
+            `Aside from PaScian Mic, the “Freshie Series” was also conducted, where SSLG members toured around the campus and interviewed freshmen about their new experiences at the school.`,
+            `In a Facebook post, the SSLG expressed its gratitude to the teachers, parents, alumni, school staff, Grade 7 students, and the school principal, Liza C. Caigoy, for contributing to the success of the program and celebration.`
         ]
     }
 ]
