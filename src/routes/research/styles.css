@@ -1,0 +1,42 @@
+  /* HERO */
+
+ .hero {
+    width: 100%;
+    min-height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    top: 0px;
+
+    padding-left: 65px;
+    padding-bottom: 30px;
+  }
+
+.heroText {
+    margin: 0;
+    color: white;
+    font-family: "Gill Sans MT Condensed", "GillSansTitle", "GillSansCondensed", Arial, sans-serif;
+    font-size: clamp(3.8rem, 8vw, 7rem);
+    line-height: 0.9;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* MAIN */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* center buttons horizontally */
+    gap: 20px; /* space between buttons */
+    width: 400px; /* optional container width */
+    margin: auto; /* center container */
+}
+
+.container button {
+    width: 150px; /* makes only 2 fit per row */
+    padding: 15px;
+}
+
