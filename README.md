@@ -45,3 +45,7 @@ If you would like to contribute to this project, please follow these guidelines:
 |                    |                       | Treanne Zamora |                     |
 |                    |                       | Deniza Lajara  |                     |
 |                    |                       | Russell Salen  |                     |
+
+## Sample Page
+
+![Sample Page](./docs/homepage.jpg)
