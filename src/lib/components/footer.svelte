@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from "$app/paths";
   import * as logo from "$lib/assets/logos";
   import { MapPin, Phone, Globe } from "@lucide/svelte";
 </script>
@@ -22,7 +23,7 @@
       <a href="">ACADEMIC POLICY</a>
     </div>
     <div class="flex flex-col gap-6 pt-2 *:mr-auto">
-      <a href="">CAMPUS MAP</a>
+      <a href={resolve("/campus-map")}>CAMPUS MAP</a>
       <a href="">ACADEMIC CALENDAR</a>
       <a href="">ADMISSION</a>
     </div>
