@@ -3,21 +3,17 @@
   import * as abstract from "$lib/assets/abstract";
 </script>
 
-<div class="relative p-32 flex flex-col min-h-screen overflow-hidden">
-  
-  <img src={image.school} alt="School" class="absolute inset-0 w-full h-full object-cover -z-10">
-
-  <div class="absolute inset-0 -z-10 bg-linear-135 from-school-blue via-school-blue-light/52 to-school-yellow"></div>
-
-  <div class="absolute inset-0 -z-10">
-    <img src={abstract.concentricBlue} alt="Abstract Blue" class="absolute top-0 left-0 -translate-x-1/3 -translate-y-3/5 pointer-events-none select-none">
-    <img src={abstract.concentricYellow} alt="Abstract Yellow" class="absolute bottom-0 right-0 translate-x-1/3 translate-y-5/8 pointer-events-none select-none">
-  </div>
-
-  <div class="font-heading text-9xl/26 tracking-tight text-white my-auto">
-    <strong class="block">WE EXCEL.</strong>
-    <strong class="block">WE SERVE.</strong>
-    <strong class="block">WE LEAD.</strong>
+<div style:background-image="url({image.school})" class="min-h-screen bg-cover bg-center">
+  <div class="flex flex-col relative overflow-hidden bg-linear-135 from-school-blue via-school-blue-light/52 to-school-yellow p-32 min-h-screen">
+    <div class="absolute inset-0 z-0 pointer-events-none select-none">
+      <img src={abstract.concentricBlue} alt="Abstract Blue" class="absolute top-0 left-0 -translate-x-1/3 -translate-y-3/5">
+      <img src={abstract.concentricYellow} alt="Abstract Yellow" class="absolute bottom-0 right-0 translate-x-1/3 translate-y-5/8">
+    </div>
+    <div class="font-heading text-9xl/26 tracking-tight text-white my-auto z-10 relative">
+      <strong class="block">WE EXCEL.</strong>
+      <strong class="block">WE SERVE.</strong>
+      <strong class="block">WE LEAD.</strong>
+    </div>
   </div>
 </div>
 
@@ -55,4 +51,13 @@
   <p class="font-body px-14">
     PCSHS is envisioned to be a world-class institution that is globally and locally competitive and responsive to the ever-changing needs of the times, especially in the fields of Science and Technology.
   </p>
+</div>
+
+<div style:background-image="url({image.lab})" class="w-full h-auto bg-cover bg-center">
+  <div class="p-24 bg-linear-to-b from-transparent from-30% to-school-blue/50">
+    <div class="flex flex-col gap-4 text-white mt-70">
+      <h1 class="font-heading text-6xl font-bold">THE LATEST FACILITIES</h1>
+      <p class="font-body max-w-lg">Pasig City Science High School features state-of-the-art facilities and laboratories that nurture their students.</p>
+    </div>
+  </div>
 </div>
