@@ -1,24 +1,29 @@
 <script lang="ts">
-  import heroBG from "./bg-research.jpg";
-  import PageHeader from '$lib/components/page-header.svelte';
+    import heroBG from '$lib/assets/images/bg-research.jpg';
+    import PageHeader from '$lib/components/page-header.svelte';
+    import { Atom, Dna, Database, Bot } from "@lucide/svelte";
 
+    const categories = [
+        { icon: Atom, title: "PHYSICAL SCIENCE" },
+        { icon: Dna, title: "LIFE SCIENCE" },
+        { icon: Database, title: "DATA SCIENCE" },
+        { icon: Bot, title: "RIM" },
+    ];
 </script>
 
+<PageHeader title="Research" img={null} />
 
-<svelte:head>
-  <title>Research</title>
-</svelte:head>
-
-<div>
-  <PageHeader title="Campus Map" img={heroBG} />
-  <div class="container">
-    <button>Button 1</button>
-    <button>Button 2</button>
-    <button>Button 3</button>
-    <button>Button 4</button>
-  </div>
+<div class="relative min-h-180 overflow-hidden px-20 py-45 
+    flex flex-wrap gap-16 items-center justify-center 
+    bg-gradient-to-b from-[rgba(90,90,178,0.2)] to-[rgba(90,90,178,0.5)] 
+    ">
+    {#each categories as cat}
+        <button class="basis-[calc(40%-8px)] flex gap-12 items-center gap-4 pl-12 py-4 
+            bg-gradient-to-r from-[#332e53] to-[#1a276d]
+            rounded-xl shadow-2xl shadow-black/50
+            ">
+            <svelte:component this={cat.icon} size={125} strokeWidth={1.25} color={"white"} />
+            <span class="text-[40px] text-white font-body">{cat.title}</span>
+        </button>
+    {/each}
 </div>
-
-<style>
-  @import "./styles.css";
-</style>
