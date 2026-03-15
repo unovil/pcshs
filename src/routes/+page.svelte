@@ -4,6 +4,7 @@
   import { onMount } from "svelte";
   import { resolve } from '$app/paths';
 	import { goto } from "$app/navigation";
+  import { news } from "$lib/assets/news";
 
   const target = new Date("2026-03-31T09:00:00+08:00").getTime();
 
@@ -11,38 +12,6 @@
   let hours = 0;
   let minutes = 0;
   let seconds = 0;
-
-  const articles: {
-    image: string;
-    date: string;
-    title: string;
-    content: string;
-  }[] = [
-    {
-      image: image.sportsfest,
-      date: "March 9, 2026",
-      title: "First USHAT conducted at PCSHS",
-      content: "Pasig City Science High School (PCSHS) successfully conducted the Unified Science High School Admission Test (USHAT) on March 7, 2026, at the PCSHS campus as part of..."
-    },
-    {
-      image: image.sportsfest,
-      date: "March 6, 2026",
-      title: "Innovation Steps into the Spotlight at Capstone Defense 2026",
-      content: "Batch 16 of Pasig City Science High School showcased their exceptional skills and inventions in the recently..."
-    },
-    {
-      image: image.sportsfest,
-      date: "February 18, 2026",
-      title: "PCSHS Holds NAT 2026 Orientation",
-      content: "The National Achievement Test (NAT) is scheduled to return this March, with all graduating senior high school students taking a standardized set of examinations designed to assess their academic..."
-    },
-    {
-      image: image.sportsfest,
-      date: "February 15, 2026",
-      title: "Future Entrepreneurs: G12 Launch Businesses at SBF 2026",
-      content: "As a major performance task for the subject Entrepreneurship, all Grade 12 students actively participated in the annual School..."
-    }
-  ]
 
   function updateCountdown() {
     const now = Date.now();
@@ -156,15 +125,17 @@
 
   <button class="border-school-blue border-2 text-school-blue my-2 px-6 py-2 rounded-full font-body cursor-pointer" onclick={() => goto(resolve("/"))}>Academic Calendar</button>
   <div class="grid grid-cols-2 gap-10 mt-10 px-40 mb-20">
-    {#each articles as article (article.content)}
-      <div class="flex flex-row gap-2 items-center">
-        <img src={article.image} alt={article.title} class="h-35 rounded-lg">
-        <div class="flex flex-col font-body">
-          <p class="text-gray-500 text-sm">{article.date}</p>
-          <h2 class="text-lg/5 font-semibold font-heading">{article.title}</h2>
-          <p class="mt-2 text-xs text-balance">{article.content}</p>
+    {#each news as article, index (index)}
+      <a href={resolve(`/news/${index}`)}>
+        <div class="flex flex-row gap-3 items-center cursor-pointer">
+          <img src={article.image} alt={article.title} class="w-50 rounded-lg">
+          <div class="flex flex-col font-body">
+            <p class="text-gray-500 text-sm">{article.date}</p>
+            <h2 class="text-lg/5 font-semibold font-heading">{article.title}</h2>
+            <p class="mt-2 text-xs text-balance line-clamp-3">{article.content[0]}</p>
+          </div>
         </div>
-      </div>
+      </a>
     {/each}
   </div>
 </div>
