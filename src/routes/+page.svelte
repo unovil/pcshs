@@ -1,6 +1,67 @@
 <script lang="ts">
   import * as image from "$lib/assets/images";
   import * as abstract from "$lib/assets/abstract";
+  import { onMount } from "svelte";
+  import { resolve } from '$app/paths';
+	import { goto } from "$app/navigation";
+
+  const target = new Date("2026-03-31T09:00:00+08:00").getTime();
+
+  let days = 0;
+  let hours = 0;
+  let minutes = 0;
+  let seconds = 0;
+
+  const articles: {
+    image: string;
+    date: string;
+    title: string;
+    content: string;
+  }[] = [
+    {
+      image: image.sportsfest,
+      date: "March 9, 2026",
+      title: "First USHAT conducted at PCSHS",
+      content: "Pasig City Science High School (PCSHS) successfully conducted the Unified Science High School Admission Test (USHAT) on March 7, 2026, at the PCSHS campus as part of..."
+    },
+    {
+      image: image.sportsfest,
+      date: "March 6, 2026",
+      title: "Innovation Steps into the Spotlight at Capstone Defense 2026",
+      content: "Batch 16 of Pasig City Science High School showcased their exceptional skills and inventions in the recently..."
+    },
+    {
+      image: image.sportsfest,
+      date: "February 18, 2026",
+      title: "PCSHS Holds NAT 2026 Orientation",
+      content: "The National Achievement Test (NAT) is scheduled to return this March, with all graduating senior high school students taking a standardized set of examinations designed to assess their academic..."
+    },
+    {
+      image: image.sportsfest,
+      date: "February 15, 2026",
+      title: "Future Entrepreneurs: G12 Launch Businesses at SBF 2026",
+      content: "As a major performance task for the subject Entrepreneurship, all Grade 12 students actively participated in the annual School..."
+    }
+  ]
+
+  function updateCountdown() {
+    const now = Date.now();
+    const diff = target - now;
+
+    if (diff <= 0) return;
+
+    days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    minutes = Math.floor((diff / (1000 * 60)) % 60);
+    seconds = Math.floor((diff / 1000) % 60);
+  }
+
+  onMount(() => {
+    updateCountdown();
+    const interval = setInterval(updateCountdown, 1000);
+
+    return () => clearInterval(interval);
+  });
 </script>
 
 <div style:background-image="url({image.school})" class="min-h-screen bg-cover bg-center">
@@ -59,5 +120,51 @@
       <h1 class="font-heading text-6xl font-bold">THE LATEST FACILITIES</h1>
       <p class="font-body max-w-lg">Pasig City Science High School features state-of-the-art facilities and laboratories that nurture their students.</p>
     </div>
+  </div>
+</div>
+
+<div class="flex flex-col gap-5 py-10 bg-linear-to-b from-school-blue to-transparent to-10% items-center">
+  <h1 class="font-bold font-heading tracking-widest text-school-blue text-7xl mt-10">CAMPUS BULLETIN</h1>
+  <div class="rounded-lg bg-school-blue grid grid-cols-2 items-center text-white">
+    <div class="flex flex-col items-center gap-1 p-10">
+      <h2 class="font-body">March 31, 2026</h2>
+      <h1 class="font-heading text-4xl">COMMENCEMENT EXERCISES</h1>
+      <hr class="bg-linear-to-r from-transparent via-white to-transparent border-none h-0.5 w-full my-5">
+      <div class="flex flex-row items-center *:flex *:flex-col *:items-center gap-12 font-body">
+        <div>
+          <p class="text-3xl font-bold">{days}</p>
+          <p class="text-sm">Days</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold">{hours}</p>
+          <p class="text-sm">Hours</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold">{minutes}</p>
+          <p class="text-sm">Minutes</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold">{seconds}</p>
+          <p class="text-sm">Seconds</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <img src={image.commencement} class="w-full h-auto object-cover rounded-r-lg" alt="Commencement Exercises">
+    </div>
+  </div>
+
+  <button class="border-school-blue border-2 text-school-blue my-2 px-6 py-2 rounded-full font-body cursor-pointer" onclick={() => goto(resolve("/"))}>Academic Calendar</button>
+  <div class="grid grid-cols-2 gap-10 mt-10 px-40 mb-20">
+    {#each articles as article (article.content)}
+      <div class="flex flex-row gap-2 items-center">
+        <img src={article.image} alt={article.title} class="h-35 rounded-lg">
+        <div class="flex flex-col font-body">
+          <p class="text-gray-500 text-sm">{article.date}</p>
+          <h2 class="text-lg/5 font-semibold font-heading">{article.title}</h2>
+          <p class="mt-2 text-xs text-balance">{article.content}</p>
+        </div>
+      </div>
+    {/each}
   </div>
 </div>
