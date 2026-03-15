@@ -1,14 +1,17 @@
 <script lang="ts">
+	import { resolve } from "$app/paths";
   import { pcshs } from "$lib/assets/logos";
 </script>
 
-<div class="p-4 grid grid-cols-2 justify-between align-middle font-body bg-linear-to-b from-school-blue to-transparent">
-  <div class="flex flex-row gap-4 items-center">
-    <img src={pcshs} alt="School Logo" class="w-10">
-    <h1 class="text-2xl font-bold">
-      PASIG CITY SCIENCE HIGH SCHOOL
-    </h1>
-  </div>
+<div class="p-4 grid grid-cols-2 justify-between align-middle font-body bg-school-blue text-white">
+  <a href={resolve("/")}>
+    <div class="flex flex-row gap-4 items-center">
+      <img src={pcshs} alt="School Logo" class="w-10">
+      <h1 class="text-2xl font-bold">
+        PASIG CITY SCIENCE HIGH SCHOOL
+      </h1>
+    </div>
+  </a>
   <!-- <nav class="flex flex-row gap-8 justify-end">
     <a href="/" class="text-lg font-semibold">Home</a>
     <a href="/about" class="text-lg font-semibold">About Us</a>
