@@ -23,9 +23,10 @@
             rounded-xl shadow-2xl shadow-black/50
 
             transition-all duration-200
+            cursor-pointer
 
-            hover:bg-gradient-to-r hover:from-[#332e53] hover:to-[#332e53]
-            hover:scale-110
+            hover:bg-gradient-to-r hover:from-[#e7be00] hover:to-[#e7ab00]
+            hover:scale-105
             ">
             <svelte:component this={cat.icon} size={125} strokeWidth={1.25} color={"white"} />
             <span class="text-[40px] text-white font-body">{cat.title}</span>
