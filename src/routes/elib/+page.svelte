@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
   import { onMount } from 'svelte';
 
   const driveLink = "https://drive.google.com/drive/folders/1kg9NDgnWVDhTuxaWKwlj5_PJbziWrNGH?usp=sharing";
@@ -48,9 +49,9 @@
     <div class="cards-container">
 
       <div class="row-top">
-        {#each categories.filter(c => !c.wide) as cat, i}
+        {#each categories.filter(c => !c.wide) as cat, i (i)}
           <a
-            href={cat.href}
+            href={resolve(cat.href)}
             target="_blank"
             rel="noopener noreferrer"
             class="card"
@@ -63,9 +64,9 @@
       </div>
 
       <div class="row-bottom">
-        {#each categories.filter(c => c.wide) as cat}
+        {#each categories.filter(c => c.wide) as cat, index (index)}
           <a
-            href={cat.href}
+            href={resolve(cat.href)}
             target="_blank"
             rel="noopener noreferrer"
             class="card card--wide"

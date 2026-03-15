@@ -109,7 +109,7 @@
     <div class="process-inner">
       <h2 class="section-heading white">ADMISSION PROCESS</h2>
       <div class="steps">
-        {#each steps as step, i}
+        {#each steps as step, i (i)}
           <div class="step" style="--si:{i}">
             <div class="step-num">{step.num}</div>
             <div class="step-card">
@@ -133,13 +133,13 @@
     <div class="content-wrap">
       <h2 class="section-heading navy">ELIGIBILITY</h2>
       <div class="two-col">
-        {#each eligibility as col}
+        {#each eligibility as col, index (index)}
           <div>
             <h3 class="col-heading">{col.grade}</h3>
-            {#each col.items as group}
+            {#each col.items as group, index (index)}
               <p class="group-label">{group.heading}</p>
               <ul class="bullet-list">
-                {#each group.bullets as b}<li>{b}</li>{/each}
+                {#each group.bullets as b, index (index)}<li>{b}</li>{/each}
               </ul>
             {/each}
           </div>
@@ -161,7 +161,7 @@
         <div>
           <h3 class="col-heading white">APPLICANT</h3>
           <ul class="bullet-list white">
-            {#each docApplicant as item}
+            {#each docApplicant as item, index (index)}
               <li class:sub={item.sub}>{item.text}</li>
             {/each}
           </ul>
@@ -169,7 +169,7 @@
         <div>
           <h3 class="col-heading white">FOR GRADE 11</h3>
           <ul class="bullet-list white">
-            {#each docGrade11 as item}
+            {#each docGrade11 as item, index (index)}
               <li class:sub={item.sub}>{item.text}</li>
             {/each}
           </ul>
@@ -184,7 +184,7 @@
     <div class="content-wrap">
       <h2 class="reminders-title">REMINDERS</h2>
       <ul class="bullet-list dark">
-        {#each reminders as item}
+        {#each reminders as item, index (index)}
           <li class:sub={item.sub}>{item.text}</li>
         {/each}
       </ul>
