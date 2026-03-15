@@ -61,17 +61,17 @@ export const news: {
     },
     {
         image: null,
-        date: "July 7, 2025",
-        title: "FreshieCon 2025: New Beginnings at PCSHS",
+        date: "February 10, 2026",
+        title: "PCSHS Dominates 31st DSPC",
         content: [
-            `FreshieCon 2025 was held at Pasig City Science High School (PCSHS) on July 4, 2025, gathering newly admitted PaScians at the school gymnasium to familiarize them with the institution and the various clubs and organizations available on campus.`,
-            `The event was organized and led by the Supreme Secondary Learner Government (SSLG), which encouraged Grade 7 students to audition and join different organizations and groups that aim to develop their talents and interests. Various clubs were also introduced during the program, presenting their goals and activities to the new students.`,
-            `Guest speaker Airene de Luna, an alumnus from the second batch of PCSHS, shared her experiences as a former PaScian and reflected on her journey during her time in the school.`,
-            `Performances were also presented by the groups Coalition, Resonate, and Fermata, showcasing their talents in dancing, playing musical instruments, and singing. The performances aimed to encourage new PaScians to audition and become part of the organizations.`,
-            `A photo booth with the theme Studio Ghibli was also prepared as part of the FreshieCon activities, allowing students to take photos and enjoy the event.`,
-            `The SSLG also launched the program “PaScian Mic,” where members discussed important information for new students, including school celebrations, traditions, facilities, and the history of PCSHS.`,
-            `Aside from PaScian Mic, the “Freshie Series” was also conducted, where SSLG members toured around the campus and interviewed freshmen about their new experiences at the school.`,
-            `In a Facebook post, the SSLG expressed its gratitude to the teachers, parents, alumni, school staff, Grade 7 students, and the school principal, Liza C. Caigoy, for contributing to the success of the program and celebration.`
+            `Campus journalists from Pasig City Science High School (PCSHS) secured top honors during the Division Schools Press Conference (DSPC), earning the Overall Champion title and several individual awards.`,
+            `The school was also recognized as the 1st Best Performing School in English and 5th Best Performing School in Filipino, highlighting the strong performance of its student journalists in various categories.`,
+            `Several PCSHS representatives qualified for the Regional Schools Press Conference (RSPC) after placing in the top ranks of their respective events.`,
+            `Among them were Charles Dominick B. Tud, who won first place in Copyreading and Headlining (Secondary), Cherry Ann O. Malate, first place in Pagwawasto at Pag-uulo ng Balita (Secondary), Godric T. Mañgapos, first place in Science Feature Writing (Secondary), and Wynona Chrissandra Z. Ventura, first place in Pagsulat ng Kolum (Secondary).`,
+            `Other top finishers included Cris Loren S. Balhon, second place in News Writing (Secondary), Romilen P. Santander, second place in Pagsulat ng Balita (Secondary), and Jared Shia G. Sarmiento, second place in Sports Writing (Secondary).`,
+            `In the group events held on February 6, 2026, at Pasig Elementary School, the PCSHS team also achieved strong results. The school’s Collaborative Desktop Publishing (English) team emerged as champion, while the Radio Broadcasting (Filipino) team placed second with Juan Miguel Villegas and Daniella Venice Pepito hailed as Best Anchors.`,
+            `School administrators and advisers commended the campus journalists for their dedication and perseverance in representing PCSHS in the annual press conference organized under the Department of Education.`,
+            `The school also expressed appreciation to the advisers, teachers, and parents who supported the students throughout their preparation for the competition, as they continue their journey to compete at the regional level.`
         ]
     },
     {
@@ -103,17 +103,17 @@ export const news: {
     },
     {
         image: null,
-        date: "February 10, 2026",
-        title: "PCSHS Dominates 31st DSPC",
+        date: "July 7, 2025",
+        title: "FreshieCon 2025: New Beginnings at PCSHS",
         content: [
-            `Campus journalists from Pasig City Science High School (PCSHS) secured top honors during the Division Schools Press Conference (DSPC), earning the Overall Champion title and several individual awards.`,
-            `The school was also recognized as the 1st Best Performing School in English and 5th Best Performing School in Filipino, highlighting the strong performance of its student journalists in various categories.`,
-            `Several PCSHS representatives qualified for the Regional Schools Press Conference (RSPC) after placing in the top ranks of their respective events.`,
-            `Among them were Charles Dominick B. Tud, who won first place in Copyreading and Headlining (Secondary), Cherry Ann O. Malate, first place in Pagwawasto at Pag-uulo ng Balita (Secondary), Godric T. Mañgapos, first place in Science Feature Writing (Secondary), and Wynona Chrissandra Z. Ventura, first place in Pagsulat ng Kolum (Secondary).`,
-            `Other top finishers included Cris Loren S. Balhon, second place in News Writing (Secondary), Romilen P. Santander, second place in Pagsulat ng Balita (Secondary), and Jared Shia G. Sarmiento, second place in Sports Writing (Secondary).`,
-            `In the group events held on February 6, 2026, at Pasig Elementary School, the PCSHS team also achieved strong results. The school’s Collaborative Desktop Publishing (English) team emerged as champion, while the Radio Broadcasting (Filipino) team placed second with Juan Miguel Villegas and Daniella Venice Pepito hailed as Best Anchors.`,
-            `School administrators and advisers commended the campus journalists for their dedication and perseverance in representing PCSHS in the annual press conference organized under the Department of Education.`,
-            `The school also expressed appreciation to the advisers, teachers, and parents who supported the students throughout their preparation for the competition, as they continue their journey to compete at the regional level.`
+            `FreshieCon 2025 was held at Pasig City Science High School (PCSHS) on July 4, 2025, gathering newly admitted PaScians at the school gymnasium to familiarize them with the institution and the various clubs and organizations available on campus.`,
+            `The event was organized and led by the Supreme Secondary Learner Government (SSLG), which encouraged Grade 7 students to audition and join different organizations and groups that aim to develop their talents and interests. Various clubs were also introduced during the program, presenting their goals and activities to the new students.`,
+            `Guest speaker Airene de Luna, an alumnus from the second batch of PCSHS, shared her experiences as a former PaScian and reflected on her journey during her time in the school.`,
+            `Performances were also presented by the groups Coalition, Resonate, and Fermata, showcasing their talents in dancing, playing musical instruments, and singing. The performances aimed to encourage new PaScians to audition and become part of the organizations.`,
+            `A photo booth with the theme Studio Ghibli was also prepared as part of the FreshieCon activities, allowing students to take photos and enjoy the event.`,
+            `The SSLG also launched the program “PaScian Mic,” where members discussed important information for new students, including school celebrations, traditions, facilities, and the history of PCSHS.`,
+            `Aside from PaScian Mic, the “Freshie Series” was also conducted, where SSLG members toured around the campus and interviewed freshmen about their new experiences at the school.`,
+            `In a Facebook post, the SSLG expressed its gratitude to the teachers, parents, alumni, school staff, Grade 7 students, and the school principal, Liza C. Caigoy, for contributing to the success of the program and celebration.`
         ]
     }
 ]

@@ -127,9 +127,13 @@
   <div class="grid grid-cols-2 gap-10 mt-10 px-40 mb-20">
     {#each news as article, index (index)}
       <a href={resolve(`/news/${index}`)}>
-        <div class="flex flex-row gap-3 items-center cursor-pointer">
-          <img src={article.image} alt={article.title} class="w-50 rounded-lg">
-          <div class="flex flex-col font-body">
+        <div class="grid grid-cols-3 gap-5 items-center cursor-pointer">
+          {#if article.image}
+          <img src={article.image} alt={article.title} class="w-full rounded-lg">
+          {:else}
+          <div></div>
+          {/if}
+          <div class="flex flex-col font-body col-span-2">
             <p class="text-gray-500 text-sm">{article.date}</p>
             <h2 class="text-lg/5 font-semibold font-heading">{article.title}</h2>
             <p class="mt-2 text-xs text-balance line-clamp-3">{article.content[0]}</p>
