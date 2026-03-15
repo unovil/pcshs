@@ -21,19 +21,38 @@
   </div>
 </div>
 
-<div class="p-20 flex flex-col items-end text-right gap-4 bg-blue-950">
-  <div class="flex flex-row items-center">
-    <div class="text-4xl font-bold uppercase leading-tight text-white">
+<div class="relative px-20 py-30 flex flex-col items-end text-right gap-4 overflow-hidden">
+  <img src={image.sportsfest} alt="Sports Fest" class="absolute top-0 left-0 -translate-x-2/5 -z-20">
+  <div class="absolute inset-0 -z-10 bg-linear-to-r from-transparent to-school-blue to-55%"></div>
+  
+  <div class="absolute inset-0 -z-10">
+    <img src={abstract.concentricBlueDark} alt="Abstract Blue Dark" class="absolute top-0 right-0 translate-x-1/3 -translate-y-3/8 pointer-events-none select-none">
+    <div class="absolute h-full bg-linear-to-r from-transparent to-school-blue/94"></div>
+  </div>
+
+  <div class="flex flex-row items-center font-heading">
+    <div class="text-3xl font-bold uppercase tracking-tight text-white">
       <p>Do you dream</p>
       <p>of becoming a</p>
     </div>
-    <p class="text-6xl font-bold uppercase text-yellow-400">Pascian<span class="text-white">?</span></p>
+    <p class="text-7xl font-bold uppercase text-yellow-400 tracking-tight">Pascian<span class="text-white">?</span></p>
   </div>
-  <p class="text-white max-w-xl text-balance">
+  <p class="text-white max-w-xl text-balance font-body">
     Step into a community where curiosity sparks discovery, ideas turn into innovation, and passion for learning drives excellence. At Pasig City Science High School, students are empowered to explore science, technology, and leadership in an environment that challenges them to think boldly and achieve more. Here, you will collaborate with bright minds, participate in dynamic academic and extracurricular programs, and grow into a future-ready leader prepared to make an impact in the world. Join the Pascian community today and start shaping a future fueled by knowledge, innovation, and purpose.
   </p>
   <div class="flex gap-4 mt-4">
     <button class="bg-yellow-400 text-black font-semibold px-6 py-2 rounded-full">Pascian →</button>
     <button class="bg-yellow-400 text-black font-semibold px-6 py-2 rounded-full">Admission →</button>
   </div>
+</div>
+
+<div class="p-20 bg-school-indigo grid grid-cols-2 gap-x-20 gap-y-3 items-center text-center text-white text-balanced">
+  <h1 class="text-5xl font-bold font-heading">MISSION</h1>
+  <h1 class="text-5xl font-bold font-heading">VISION</h1>
+  <p class="font-body px-14">
+    PCSHS' mission is to fully develop well-rounded, Science and Technology-oriented students, nurturing and gender-sensitive persons, and future leaders with a vision for excellence.
+  </p>
+  <p class="font-body px-14">
+    PCSHS is envisioned to be a world-class institution that is globally and locally competitive and responsive to the ever-changing needs of the times, especially in the fields of Science and Technology.
+  </p>
 </div>
