@@ -16,7 +16,7 @@
     { level: 'Sixth Floor', img: sixthFloor },
   ];
 
-  let i = 0;
+  let i = $state(0);
 
   function nextFloor() {
     if (i < floors.length - 1) i++;
@@ -27,32 +27,61 @@
   }
 </script>
 
-<main class="min-h-screen flex justify-center items-center p-5 bg-white bg-no-repeat bg-fixed" style="background-image: url({bgGraphic}); background-position: -60% -90%; background-size: 70% auto;">
-  <div class="bg-white w-full max-w-3xl p-8 rounded-xl z-10">
-    <div class="flex justify-between items-center mb-6">
-      <div class="relative flex items-center">
-        <select bind:value={i} class="appearance-none bg-white border border-slate-200 px-4 py-2 rounded-full text-sm text-slate-700 cursor-pointer font-medium min-w-[160px] transition-colors duration-200 hover:border-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-300">
-          {#each floors as floor, index}
+<div class="relative min-h-screen overflow-hidden ">
+
+  <!-- Background graphic -->
+   <img src={bgGraphic} alt="Background Graphic" class="absolute bottom-0 left-0 -translate-x-1/3 translate-y-3/5 pointer-events-none select-none -z-20 w-250">
+
+  <!-- Page content -->
+  <main class="relative flex min-h-screen items-center justify-center p-5">
+
+    <div class="w-full max-w-3xl rounded-xl bg-white p-8 shadow-lg">
+
+      <!-- Controls -->
+      <div class="mb-6 flex items-center justify-between">
+
+        <select
+          bind:value={i}
+          class="min-w-40 cursor-pointer appearance-none rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition-colors duration-200 hover:border-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-300"
+        >
+          {#each floors as floor, index (index)}
             <option value={index}>{floor.level}</option>
           {/each}
         </select>
+
+        <div class="flex gap-2">
+          <button
+            onclick={prevFloor}
+            disabled={i === 0}
+            class="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-xl text-slate-500 transition-all duration-200 hover:border-slate-300 hover:bg-slate-100 hover:text-slate-800 disabled:cursor-not-allowed disabled:opacity-30"
+          >
+            ‹
+          </button>
+
+          <button
+            onclick={nextFloor}
+            disabled={i === floors.length - 1}
+            class="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-xl text-slate-500 transition-all duration-200 hover:border-slate-300 hover:bg-slate-100 hover:text-slate-800 disabled:cursor-not-allowed disabled:opacity-30"
+          >
+            ›
+          </button>
+        </div>
+
       </div>
 
-      <div class="flex gap-2">
-        <button on:click={prevFloor} disabled={i === 0} class="w-9 h-9 rounded-full border border-slate-200 bg-white text-slate-500 flex items-center justify-center text-xl transition-all duration-200 hover:bg-slate-100 hover:border-slate-300 hover:text-slate-800 disabled:opacity-30 disabled:cursor-not-allowed">
-          ‹
-        </button>
-        <button on:click={nextFloor} disabled={i === floors.length - 1} class="w-9 h-9 rounded-full border border-slate-200 bg-white text-slate-500 flex items-center justify-center text-xl transition-all duration-200 hover:bg-slate-100 hover:border-slate-300 hover:text-slate-800 disabled:opacity-30 disabled:cursor-not-allowed">
-          ›
-        </button>
+      <!-- Image viewer -->
+      <div class="flex justify-center rounded-lg p-2 shadow-[0_2px_10px_rgba(0,0,0,0.03)]">
+
+        <img
+          class="max-h-[55vh] w-full object-contain"
+          src={floors[i].img}
+          alt={floors[i].level}
+        />
+
       </div>
+
     </div>
 
-    <div class="p-4 rounded-lg flex justify-center md:p-1">
-      <div class="bg-white p-2 rounded-sm w-full shadow-[0_2px_10px_rgba(0,0,0,0.03)] max-h-[55vh]">
-        <img class="w-full max-h-[52vh] h-auto block object-contain" src={floors[i].img} alt={floors[i].level} />
-      </div>
-    </div>
-  </div>
-</main>
+  </main>
 
+</div>
