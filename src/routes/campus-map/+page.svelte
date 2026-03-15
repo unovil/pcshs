@@ -6,6 +6,7 @@
   import fifthFloor from '$lib/assets/floorplan/5TH FLOOR.png';
   import sixthFloor from '$lib/assets/floorplan/6TH FLOOR.png';
   import bgGraphic from '$lib/assets/floorplan/1.1.svg';
+	import PageHeader from '$lib/components/page-header.svelte';
 
   const floors = [
     { level: 'Ground Floor', img: groundFloor },
@@ -26,6 +27,8 @@
     if (i > 0) i--;
   }
 </script>
+
+<PageHeader title="Campus Map" img={null} />
 
 <div class="relative min-h-screen overflow-hidden ">
 
@@ -73,7 +76,7 @@
       <div class="flex justify-center rounded-lg p-2 shadow-[0_2px_10px_rgba(0,0,0,0.03)]">
 
         <img
-          class="max-h-[55vh] w-full object-contain"
+          class="w-full object-contain"
           src={floors[i].img}
           alt={floors[i].level}
         />
