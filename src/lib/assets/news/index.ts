@@ -4,7 +4,7 @@ import sbf from './sbf.jpg';
 import ushat from './ushat.jpg';
 
 export const news: {
-    image: string;
+    image: string | null;
     title: string;
     date: string;
     content: string[];
