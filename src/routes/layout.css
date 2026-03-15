@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@theme {
+    --font-heading: "Cabin Condensed", sans-serif;
+    --font-body: "Cabin", sans-serif;
+    --font-body--font-variation-settings: "wdth" 100;
+
+    --color-school-blue: #2f2b51;
+    --color-school-blue-light: #2386e1;
+    --color-school-yellow: #e1bd23;
+    --color-school-indigo: #5a4fb2;
+}
