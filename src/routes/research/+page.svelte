@@ -21,6 +21,11 @@
         <button class="basis-[calc(40%-8px)] flex gap-12 items-center gap-4 pl-12 py-4 
             bg-gradient-to-r from-[#332e53] to-[#1a276d]
             rounded-xl shadow-2xl shadow-black/50
+
+            transition-all duration-200
+
+            hover:bg-gradient-to-r hover:from-[#332e53] hover:to-[#332e53]
+            hover:scale-110
             ">
             <svelte:component this={cat.icon} size={125} strokeWidth={1.25} color={"white"} />
             <span class="text-[40px] text-white font-body">{cat.title}</span>
