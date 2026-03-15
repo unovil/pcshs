@@ -46,6 +46,12 @@ If you would like to contribute to this project, please follow these guidelines:
 |                    |                       | Deniza Lajara  |                     |
 |                    |                       | Russell Salen  |                     |
 
-## Sample Page
+## Sample Pages
+
+### Homepage
 
 ![Sample Page](./docs/homepage.jpg)
+
+### News Page Sample
+
+![News Page](./docs/news.png)
