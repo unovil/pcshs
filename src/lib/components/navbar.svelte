@@ -2,7 +2,7 @@
   import { pcshs } from "$lib/assets/logos";
 </script>
 
-<div class="p-4 grid grid-cols-2 justify-between align-middle font-body bg-linear-to-b from-school-blue to-transparent">
+<div class="p-4 grid grid-cols-2 justify-between align-middle font-body bg-school-blue text-white">
   <div class="flex flex-row gap-4 items-center">
     <img src={pcshs} alt="School Logo" class="w-10">
     <h1 class="text-2xl font-bold">

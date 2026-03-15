@@ -39,7 +39,7 @@
       <img src={abstract.concentricBlue} alt="Abstract Blue" class="absolute top-0 left-0 -translate-x-1/3 -translate-y-3/5">
       <img src={abstract.concentricYellow} alt="Abstract Yellow" class="absolute bottom-0 right-0 translate-x-1/3 translate-y-5/8">
     </div>
-    <div class="font-heading text-9xl/26 tracking-tight text-white my-auto z-10 relative">
+    <div class="font-heading text-9xl/26 tracking-tight text-white my-auto z-0 relative">
       <strong class="block">WE EXCEL.</strong>
       <strong class="block">WE SERVE.</strong>
       <strong class="block">WE LEAD.</strong>
