@@ -81,8 +81,8 @@
               <span class="font-bold text-xl font-heading">About</span>
               <hr>
               <a href="" class="uppercase font-body text-sm">School information</a>
-              <a href="/administration" class="uppercase font-body text-sm">Administration</a>
-              <a href="" class="uppercase font-body text-sm">Campus Map</a>
+              <a href={resolve("/administration")} class="uppercase font-body text-sm">Administration</a>
+              <a href={resolve("/campus-map")} class="uppercase font-body text-sm">Campus Map</a>
             </div>
 
             <div class="flex flex-col gap-1">
