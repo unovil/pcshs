@@ -61,3 +61,7 @@ If you would like to contribute to this project, please follow these guidelines:
 ### Campus Map
 
 ![Campus Map](./docs/campus-map.png)
+
+### Administration
+
+![Administration](./docs/administration.png)
