@@ -36,9 +36,9 @@
    <img src={bgGraphic} alt="Background Graphic" class="absolute bottom-0 left-0 -translate-x-1/3 translate-y-3/5 pointer-events-none select-none -z-20 w-250">
 
   <!-- Page content -->
-  <main class="relative flex min-h-screen items-center justify-center p-5">
+  <main class="relative flex min-h-screen items-center justify-center p-20">
 
-    <div class="w-full max-w-3xl rounded-xl bg-white p-8 shadow-lg">
+    <div class="w-4/5 rounded-xl bg-white p-8 shadow-lg">
 
       <!-- Controls -->
       <div class="mb-6 flex items-center justify-between">
