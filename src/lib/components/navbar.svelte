@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { afterNavigate } from "$app/navigation";
 	import { resolve } from "$app/paths";
   import { pcshs } from "$lib/assets/logos";
 	import { Menu } from "@lucide/svelte";
@@ -16,6 +17,10 @@
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
+  });
+
+  afterNavigate(() => {
+    isMenuOpened = false;
   });
 
 </script>
@@ -76,7 +81,7 @@
               <span class="font-bold text-xl font-heading">About</span>
               <hr>
               <a href="" class="uppercase font-body text-sm">School information</a>
-              <a href="" class="uppercase font-body text-sm">Administration</a>
+              <a href="/administration" class="uppercase font-body text-sm">Administration</a>
               <a href="" class="uppercase font-body text-sm">Campus Map</a>
             </div>
 
