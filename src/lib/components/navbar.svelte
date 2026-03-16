@@ -7,7 +7,7 @@
 	import { fade, fly } from "svelte/transition";
 
   let scrolled = $state(false);
-  let isMenuOpened = $state(true);
+  let isMenuOpened = $state(false);
 
   onMount(() => {
     const handleScroll = () => {
