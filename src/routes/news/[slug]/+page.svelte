@@ -1,11 +1,14 @@
 <script lang="ts">
 	import type { PageProps } from "./$types";
   import { news } from "$lib/assets/news";
+	import PageHeader from "$lib/components/page-header.svelte";
 
   let { params }: PageProps = $props();
 
   const article = $derived(news[Number(params.slug)]);
 </script>
+
+<PageHeader title="Campus Bulletin" img={null}/>
 
 <div class="bg-linear-to-b from-[#d0d1e2] to-[#6e6b8e] min-h-screen py-30 px-30">
   <div class="p-24 rounded-lg shadow-lg bg-white flex flex-col gap-10 max-w-5xl mx-auto">
@@ -15,7 +18,7 @@
     <div>
       <div class="font-body grid grid-cols-2 place-content-between w-full">
         <span class="uppercase text-start">{article.date}</span>
-        <span class="uppercase text-end">WYNONA VENTURA | SCIRE</span>
+        <span class="uppercase text-end">{article.author}</span>
       </div>
       <hr class="mt-2 border">
     </div>
