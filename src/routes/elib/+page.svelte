@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
   import { onMount } from 'svelte';
   import PageHeader from '$lib/components/page-header.svelte';
 
@@ -30,7 +31,7 @@
       <div class="grid grid-cols-2 gap-[1.1rem]">
         {#each categories.filter(c => !c.wide) as cat, i}
           <a
-            href={cat.href}
+            href={resolve(cat.href)}
             target="_blank"
             rel="noopener noreferrer"
             class="card-btn"
@@ -47,7 +48,7 @@
       <div>
         {#each categories.filter(c => c.wide) as cat}
           <a
-            href={cat.href}
+            href={resolve(cat.href)}
             target="_blank"
             rel="noopener noreferrer"
             class="card-btn card-wide"
