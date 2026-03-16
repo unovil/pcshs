@@ -1,18 +1,20 @@
-import defense from './defense.jpg';
-import nat from './nat.jpeg';
-import sbf from './sbf.jpg';
-import ushat from './ushat.jpg';
+import champion from "./champion.png";
+import foundation from "./foundation.png";
+import freshie from "./freshie.png";
+import xmas from "./xmas.png";
 
 export const news: {
     image: string | null;
     title: string;
+    author: string;
     date: string;
     content: string[];
 }[] = [
     {
-        image: ushat,
+        image: null,
         date: "March 9, 2026",
         title: "First USHAT conducted at PCSHS",
+        author: "WYNONA CHRISSANDRA VENTURA | ANG PASCIAN",
         content: [
             `Pasig City Science High School (PCSHS) successfully conducted the Unified Science High School Admission Test (USHAT) on March 7, 2026, at the PCSHS campus as part of its admission process for incoming students.`,
             `The examination was administered in two batches, with the first session held from 8:00 a.m. to 12:00 noon and the second session from 1:00 p.m. to 5:00 p.m., accommodating applicants from different schools.`,
@@ -24,9 +26,10 @@ export const news: {
         ]
     },
     {
-        image: defense,
+        image: null,
         date: "March 6, 2026",
         title: "Innovation Steps into the Spotlight at Capstone Defense 2026",
+        author: "ANGEL SARIAH PIAD | DUBINS",
         content: [
             `Batch 16 of Pasig City Science High School showcased their exceptional skills and inventions in the recently concluded Capstone Defense held on March 4-5, 2026. The two-day event took place in Grade 12 Classrooms, where students, teachers, panelists, and Technical Working Group (TWG) members witnessed several presentations that highlighted real-world interest in recent STEM-related problems.`,
             `The first day included formal registration of the official participants and the presentation of the Physical and Data Science categories. In total, 26 presentations were evaluated; 18 studies were classified under Physical Science, and 8 under Data Science. Panelists for Physical Science were Mr. Ronald Dumapias, Mr. Roque Travero, and Ms. Cynthia Quiogue, while Data Science panelists were Mr. Hernan Barrosa, Mr. Joseph Lara, and Ms. Elizabeth Regencia.`,
@@ -36,9 +39,10 @@ export const news: {
         ]
     },
     {
-        image: nat,
+        image: null,
         date: "February 18, 2026",
         title: "PCSHS Holds NAT 2026 Orientation",
+        author: "ANGEL SARIAH PIAD | DUBINS",
         content: [
             `The National Achievement Test (NAT) is scheduled to return this March, with all graduating senior high school students taking a standardized set of examinations designed to assess their academic knowledge. To prepare for the said nationwide event, Pasig City Science High School held a formal orientation for its Grade 12 students on February 16, 2026, after the scheduled weekly flag ceremony.`,
             `The orientation was led by Mr. Ronald Dumapias, under the supervision of the school principal, Ms. Liza C. Caigoy. Teachers and advisers of the required grade level were also present during the discussion.`,
@@ -48,9 +52,23 @@ export const news: {
         ]
     },
     {
-        image: sbf,
+        image: null,
+        date: "February 18, 2026",
+        title: "New Faces, Same Mission: PCSHS Announces Newly-Elected SSLG Officers",
+        author: "ANGEL SARIAH PIAD | DUBINS",
+        content: [
+            `Individuals who emerged as new Secondary Supreme Learner's Government (SSLG) Officers for School Year 2026-2027 participated in the official oath-taking ceremony held on Monday, February 16, 2026, as part of PCSHS' morning flag ceremony.`,
+            `As announced, the following candidates were proclaimed as the new faces of the SSLG Council: Joel B. Arellano Jr. as President, Belle Mallory B. Rebuta as Vice President, Megumi S. Moriizumi as Secretary, Ysabella Cassandra J. Balana as Treasurer, Kimberly Cristel B. Garcia as Auditor, Carmela Joy B. Ignacio as Public Information Officer (PIO), and Karl Gabriel A. Abner as Protocol Officer.`,
+            `Furthermore, Grade Level Representatives were also recognized: John Daniel DC. Tanquino and Carllie Addie P. Alcantara as Grade 12 Representatives, Ayeizha Lorreyn T. Valiente and Steven Jhudiel N. Mesalucha as Grade 11 Representatives, Yuna Carmela M. Dean and Mary Louise A. Benedicto as Grade 10 Representatives, Katelyn Michelle G. Dizon and Red Alexa A. Saldua as Grade 9 Representatives, and Angela Victoria A. Chua and Seanne Angelu DJ. Aldave as Grade 8 Representatives.`,
+            `After the confirmation of their positions, these student leaders recited their pledges before the PaScian community. They acknowledged the significant responsibilities and effort required by their roles, while promising to serve, lead, and excel with utmost integrity and fairness.`,
+            `One week before the event, the school also organized a formal election day, where students from Grades 7 to 11 were encouraged to cast their votes for their preferred nominees. Following the election proper, the canvassing of results was also immediately administered by the Electoral Chairman, Mr. Mark Angelo V. Loreto, along with the current SSLG officers and their Adviser, Ms. Villa-Michelle P. de Vera.`
+        ]
+    },
+    {
+        image: null,
         date: "February 15, 2026",
         title: "Future Entrepreneurs: G12 Launch Businesses at SBF 2026",
+        author: "ANGEL SARIAH PIAD | DUBINS",
         content: [
             `As a major performance task for the subject Entrepreneurship, all Grade 12 students actively participated in the annual School Business Fair held from February 9 to 13, 2026. Under the continued initiative of Ms. Kathleen Adona, this year’s SBF transitioned to a week-long format, marking a notable change from its traditional one-day duration. Students also had the option to operate on or off campus, allowing them the flexibility to choose the most suitable environment for their business.`,
             `Ultimately, the event showcased seven brilliant business ideas brought to life by the participants. They were also classified into two categories: product and service. 12-Bernoulli's Pa-still Into You, 12-Bonferroni's Alab-Bingsu, 12-Cramer's Thirst Ade Kit, 12-Kendall's Oh-My-Chomai, 12-Markov's Florens Caritas, and 12-Meyer's MyKookie Co., all fall under the product category. Meanwhile, My Memory by 12-Dubins falls under the service category.`,
@@ -60,9 +78,10 @@ export const news: {
         ]
     },
     {
-        image: null,
+        image: champion,
         date: "February 10, 2026",
         title: "PCSHS Dominates 31st DSPC",
+        author: "WYNONA CHRISSANDRA VENTURA | ANG PASCIAN",
         content: [
             `Campus journalists from Pasig City Science High School (PCSHS) secured top honors during the Division Schools Press Conference (DSPC), earning the Overall Champion title and several individual awards.`,
             `The school was also recognized as the 1st Best Performing School in English and 5th Best Performing School in Filipino, highlighting the strong performance of its student journalists in various categories.`,
@@ -75,9 +94,10 @@ export const news: {
         ]
     },
     {
-        image: null,
+        image: xmas,
         date: "December 21, 2025",
         title: "Environmental Christmas at PCSHS",
+        author: "WYNONA CHRISSANDRA VENTURA | ANG PASCIAN",
         content: [
             `The Pasig City Science High School (PCSHS) conducted its first Christmas Decoration Contest for teaching and non-teaching staff in December 2025 as part of the school’s initiative to promote environmental awareness and unity within the community.`,
             `The contest encouraged participants to create Christmas decorations using recyclable and unused materials, highlighting creativity while promoting sustainable practices. The activity concluded on December 1, with departments presenting their decorated spaces made from discarded materials.`,
@@ -88,9 +108,10 @@ export const news: {
         ]
     },
     {
-        image: null,
+        image: foundation,
         date: "November 10, 2025",
         title: "2NE1: PCSHS Founding Anniversary",
+        author: "WYNONA CHRISSANDRA VENTURA | ANG PASCIAN",
         content: [
             `The Pasig City Science High School (PCSHS) celebrated its 21st Founding Anniversary, also known as “2NE1,” on November 7, 2025, at the PCSHS campus.`,
             `The program was organized by the Supreme Secondary Learners Government (SSLG) and the Coordinating Council (CoCo), in collaboration with different school organizations. Support was also provided by the School Governance Council (SGC), School Parents-Teachers Association (SPTA), and other stakeholders.`,
@@ -102,9 +123,10 @@ export const news: {
         ]
     },
     {
-        image: null,
+        image: freshie,
         date: "July 7, 2025",
         title: "FreshieCon 2025: New Beginnings at PCSHS",
+        author: "WYNONA CHRISSANDRA VENTURA | ANG PASCIAN",
         content: [
             `FreshieCon 2025 was held at Pasig City Science High School (PCSHS) on July 4, 2025, gathering newly admitted PaScians at the school gymnasium to familiarize them with the institution and the various clubs and organizations available on campus.`,
             `The event was organized and led by the Supreme Secondary Learner Government (SSLG), which encouraged Grade 7 students to audition and join different organizations and groups that aim to develop their talents and interests. Various clubs were also introduced during the program, presenting their goals and activities to the new students.`,
