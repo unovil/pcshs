@@ -31,8 +31,8 @@
     <a href={resolve("/")}>
       <div class="relative z-10 flex items-center gap-4">
         <img src={pcshs} alt="School Logo" class="w-10">
-        <h1 class="text-2xl font-bold">
-          PASIG CITY SCIENCE HIGH SCHOOL
+        <h1 class="text-2xl font-bold font-heading uppercase">
+          Pasig City Science High School
         </h1>
       </div>
     </a>
