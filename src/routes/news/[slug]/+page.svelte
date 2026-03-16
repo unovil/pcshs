@@ -15,7 +15,7 @@
     <div>
       <div class="font-body grid grid-cols-2 place-content-between w-full">
         <span class="uppercase text-start">{article.date}</span>
-        <span class="uppercase text-end">WYNONA VENTURA | SCIRE</span>
+        <span class="uppercase text-end">{article.author}</span>
       </div>
       <hr class="mt-2 border">
     </div>
