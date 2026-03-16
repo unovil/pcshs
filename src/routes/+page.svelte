@@ -129,7 +129,7 @@
       <a href={resolve(`/news/${index}`)}>
         <div class="grid grid-cols-3 gap-5 items-center cursor-pointer">
           {#if article.image}
-          <img src={article.image} alt={article.title} class="w-full rounded-lg">
+          <img src={article.image} alt={article.title} class="w-full max-h-24 object-cover rounded-lg">
           {:else}
           <div></div>
           {/if}
