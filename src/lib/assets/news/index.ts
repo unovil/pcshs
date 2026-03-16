@@ -2,6 +2,10 @@ import champion from "./champion.png";
 import foundation from "./foundation.png";
 import freshie from "./freshie.png";
 import xmas from "./xmas.png";
+import ushat from "./ushat.png";
+import sbf from "./sbf.png";
+import election from "./election.png";
+import defense from "./defense.png";
 
 export const news: {
     image: string | null;
@@ -11,7 +15,7 @@ export const news: {
     content: string[];
 }[] = [
     {
-        image: null,
+        image: ushat,
         date: "March 9, 2026",
         title: "First USHAT conducted at PCSHS",
         author: "WYNONA CHRISSANDRA VENTURA | ANG PASCIAN",
@@ -26,7 +30,7 @@ export const news: {
         ]
     },
     {
-        image: null,
+        image: defense,
         date: "March 6, 2026",
         title: "Innovation Steps into the Spotlight at Capstone Defense 2026",
         author: "ANGEL SARIAH PIAD | DUBINS",
@@ -39,7 +43,7 @@ export const news: {
         ]
     },
     {
-        image: null,
+        image: ushat,
         date: "February 18, 2026",
         title: "PCSHS Holds NAT 2026 Orientation",
         author: "ANGEL SARIAH PIAD | DUBINS",
@@ -52,7 +56,7 @@ export const news: {
         ]
     },
     {
-        image: null,
+        image: election,
         date: "February 18, 2026",
         title: "New Faces, Same Mission: PCSHS Announces Newly-Elected SSLG Officers",
         author: "ANGEL SARIAH PIAD | DUBINS",
@@ -65,7 +69,7 @@ export const news: {
         ]
     },
     {
-        image: null,
+        image: sbf,
         date: "February 15, 2026",
         title: "Future Entrepreneurs: G12 Launch Businesses at SBF 2026",
         author: "ANGEL SARIAH PIAD | DUBINS",
