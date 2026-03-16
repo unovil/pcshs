@@ -3,6 +3,7 @@
   import { pcshs } from "$lib/assets/logos";
 	import { Menu } from "@lucide/svelte";
   import { onMount } from "svelte";
+	import { fade, fly } from "svelte/transition";
 
   let scrolled = $state(false);
   let isMenuOpened = $state(true);
@@ -45,9 +46,30 @@
         class="fixed inset-0 z-40"
         title="Close Menu"
         onclick={() => (isMenuOpened = false)}
+        in:fade={{ duration: 150 }}
+        out:fade={{ duration: 150 }}
       ></button>
 
-      <div class="absolute right-4 top-full mt-2 z-50 bg-school-indigo text-white rounded shadow-lg p-10">
+      <div 
+        class="absolute right-4 top-full mt-2 z-50 bg-school-indigo text-white rounded shadow-lg p-10
+        [&_a]:relative
+        [&_a]:inline-block
+        [&_a]:mr-auto
+        [&_a::after]:content-['']
+        [&_a::after]:absolute
+        [&_a::after]:left-0
+        [&_a::after]:bottom-0
+        [&_a::after]:h-0.5
+        [&_a::after]:w-full
+        [&_a::after]:origin-left
+        [&_a::after]:scale-x-0
+        [&_a::after]:bg-current
+        [&_a::after]:transition-transform
+        [&_a::after]:duration-200
+        [&_a:hover::after]:scale-x-100"
+        in:fly={{ y: -10, duration: 200 }}
+        out:fly={{ y: -10, duration: 150 }}
+      >
         <div class="grid grid-cols-2 gap-10">
           <div class="flex flex-col gap-5 items-start *:w-full">
             <div class="flex flex-col gap-1">
