@@ -124,12 +124,12 @@
   </div>
 
   <button class="border-school-blue border-2 text-school-blue my-2 px-6 py-2 rounded-full font-body cursor-pointer" onclick={() => goto(resolve("/"))}>Academic Calendar</button>
-  <div class="grid grid-cols-2 gap-10 mt-10 px-40 mb-20">
+  <div class="grid grid-cols-2 gap-10 items-center mt-10 px-40 mb-20">
     {#each news as article, index (index)}
       <a href={resolve(`/news/${index}`)}>
         <div class="grid grid-cols-3 gap-5 items-center cursor-pointer">
           {#if article.image}
-          <img src={article.image} alt={article.title} class="w-full rounded-lg">
+          <img src={article.image} alt={article.title} class="w-full max-h-24 object-cover rounded-lg">
           {:else}
           <div></div>
           {/if}
