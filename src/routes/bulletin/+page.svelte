@@ -27,250 +27,31 @@ relatedIndex=(relatedIndex-1+related.length)%related.length
 
 </script>
 
-<style>
-
-body{
-margin:0;
-font-family:Arial;
-background:#1d1360;
-color:white;
-}
 
 
+<!-- HERO -->
 
-.hero{
-position:relative;
-height:520px;
-background:
-linear-gradient(rgba(30,20,100,.75),rgba(30,20,100,.95)),
-url("/images/ushat.png") center/cover;
-display:flex;
-align-items:flex-end;
-padding:60px 10%;
-}
+<section class="relative h-[520px] flex items-end px-[10%] py-[60px] text-white font-body bg-[url('/images/ushat.png')] bg-cover bg-center">
 
-.heroContent{
-max-width:900px;
-}
+<div class="absolute inset-0 bg-gradient-to-b from-[rgba(30,20,100,.75)] to-[rgba(30,20,100,.95)]"></div>
 
-.hero h1{
-font-size:48px;
-margin:0 0 10px;
-}
+<div class="relative max-w-[900px]">
 
-.hero p{
-color:#ddd;
-}
-
-.readBtn{
-margin-top:25px;
-background:white;
-border:none;
-padding:12px 26px;
-border-radius:25px;
-cursor:pointer;
-transition:.3s;
-}
-
-.readBtn:hover{
-transform:scale(1.08);
-}
-
-
-
-.news{
-padding:80px 10%;
-}
-
-.news h2{
-text-align:center;
-font-size:42px;
-letter-spacing:3px;
-margin-bottom:50px;
-}
-
-.newsGrid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:35px;
-}
-
-.card{
-display:flex;
-gap:20px;
-background:#2b2a74;
-border-radius:20px;
-padding:22px;
-transition:.3s;
-cursor:pointer;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 20px 35px rgba(0,0,0,.3);
-}
-
-.card img{
-width:150px;
-border-radius:10px;
-}
-
-.card small{
-color:#bbb;
-}
-
-.loadMore{
-display:block;
-margin:60px auto 0;
-background:#ffd200;
-border:none;
-padding:14px 40px;
-border-radius:30px;
-font-weight:bold;
-cursor:pointer;
-}
-
-
-
-.articleSection{
-background:#e8e8f2;
-padding:120px 10%;
-color:black;
-}
-
-.article{
-background:white;
-border-radius:22px;
-padding:60px;
-box-shadow:0 25px 50px rgba(0,0,0,.2);
-}
-
-.article h1{
-font-size:36px;
-margin-bottom:20px;
-}
-
-.meta{
-display:flex;
-justify-content:space-between;
-border-bottom:2px solid #ccc;
-padding-bottom:12px;
-margin-bottom:25px;
-}
-
-.article img{
-width:100%;
-border-radius:12px;
-margin:25px 0;
-}
-
-.article p{
-line-height:1.8;
-color:#444;
-}
-
-
-
-.recommend{
-margin-top:70px;
-background:#2b2a74;
-border-radius:24px;
-padding:50px;
-color:white;
-position:relative;
-}
-
-.recommend h2{
-margin-bottom:25px;
-}
-
-.slider{
-display:flex;
-gap:25px;
-overflow:hidden;
-}
-
-.recCard{
-background:white;
-color:black;
-padding:16px;
-border-radius:12px;
-width:260px;
-transition:.3s;
-}
-
-.recCard:hover{
-transform:translateY(-6px);
-}
-
-.recCard img{
-width:100%;
-border-radius:8px;
-}
-
-.arrow{
-position:absolute;
-top:50%;
-transform:translateY(-50%);
-background:white;
-color:black;
-border:none;
-width:40px;
-height:40px;
-border-radius:50%;
-cursor:pointer;
-}
-
-.left{
-left:-20px;
-}
-
-.right{
-right:-20px;
-}
-
-
-
-.author{
-margin-top:70px;
-background:white;
-border-radius:22px;
-padding:40px;
-display:flex;
-gap:30px;
-align-items:center;
-}
-
-.author img{
-width:150px;
-border-radius:10px;
-}
-
-.author h3{
-margin:0 0 8px;
-}
-
-</style>
-
-
-
-<section class="hero">
-
-<div class="heroContent">
-
-<h1>
+<h1 class="font-heading text-[48px] mb-2">
 FIRST-EVER UNIFIED SCIENCE HIGH SCHOOL ADMISSIONS TEST (USHAT)
 CONDUCTED AT PCSHS
 </h1>
 
-<p>MARCH 9, 2026</p>
+<p class="text-gray-300">MARCH 9, 2026</p>
 
-<p>
+<p class="text-gray-300">
 Pasig City Science High School successfully conducted the Unified
 Science High School Admission Test (USHAT) on March 7, 2026.
 </p>
 
-<button class="readBtn" on:click={()=>showArticle=true}>
+<button
+class="mt-[25px] bg-white text-black px-[26px] py-[12px] rounded-[25px] transition hover:scale-105"
+on:click={()=>showArticle=true}>
 Read More
 </button>
 
@@ -280,23 +61,29 @@ Read More
 
 
 
-<section class="news">
+<!-- NEWS -->
 
-<h2>NEWS & EVENTS</h2>
+<section class="px-[10%] py-[80px] font-body bg-[#1d1360] text-white">
 
-<div class="newsGrid">
+<h2 class="text-center text-[42px] tracking-[3px] mb-[50px] font-heading">
+NEWS & EVENTS
+</h2>
+
+<div class="grid grid-cols-2 gap-[35px]">
 
 {#each news as n}
 
-<div class="card" on:click={()=>showArticle=true}>
+<div
+class="flex gap-[20px] bg-[#2b2a74] rounded-[20px] p-[22px] cursor-pointer transition hover:-translate-y-2 hover:shadow-[0_20px_35px_rgba(0,0,0,.3)]"
+on:click={()=>showArticle=true}>
 
-<img src="/images/freshie.png">
+<img src="/images/freshie.png" class="w-[150px] rounded-[10px]">
 
 <div>
 
-<small>{n.date}</small>
+<small class="text-gray-400">{n.date}</small>
 
-<h3>{n.title}</h3>
+<h3 class="font-heading">{n.title}</h3>
 
 <p>
 FreshieCon 2025 was held at Pasig City Science High School to welcome
@@ -311,45 +98,45 @@ newly admitted Pascians.
 
 </div>
 
-<button class="loadMore">Load More</button>
+<button class="block mx-auto mt-[60px] bg-yellow-400 text-black px-[40px] py-[14px] rounded-[30px] font-bold">
+Load More
+</button>
 
 </section>
 
 
 
-
 {#if showArticle}
 
-<section class="articleSection">
+<section class="bg-[#e8e8f2] px-[10%] py-[120px] text-black font-body">
 
-<div class="article">
+<div class="bg-white rounded-[22px] p-[60px] shadow-[0_25px_50px_rgba(0,0,0,.2)]">
 
-<h1>
+<h1 class="text-[36px] mb-[20px] font-heading">
 INNOVATION STEPS INTO THE SPOTLIGHT AT CAPSTONE DEFENSE 2026
 </h1>
 
-<div class="meta">
+<div class="flex justify-between border-b-2 border-gray-300 pb-[12px] mb-[25px]">
 
 <span>MARCH 12, 2026</span>
-
 <span>WYNONA VENTURA | SCIRE</span>
 
 </div>
 
-<img src="/images/freshie.png">
+<img src="/images/freshie.png" class="w-full rounded-[12px] my-[25px]">
 
-<p>
+<p class="leading-[1.8] text-gray-700">
 Batch 16 of Pasig City Science High School showcased their exceptional
 skills and inventions during the Capstone Defense held on March 4–5,
 2026.
 </p>
 
-<p>
+<p class="leading-[1.8] text-gray-700">
 Students presented innovative research solutions addressing real-world
 STEM problems.
 </p>
 
-<p>
+<p class="leading-[1.8] text-gray-700">
 Panelists evaluated the projects across different categories including
 Physical Science, Data Science, Robotics, and Intelligent Machines.
 </p>
@@ -358,24 +145,25 @@ Physical Science, Data Science, Robotics, and Intelligent Machines.
 
 
 
+<div class="mt-[70px] bg-[#2b2a74] rounded-[24px] p-[50px] text-white relative">
 
-<div class="recommend">
+<h2 class="mb-[25px] font-heading">YOU MIGHT ALSO LIKE</h2>
 
-<h2>YOU MIGHT ALSO LIKE</h2>
+<button
+class="absolute top-1/2 -translate-y-1/2 left-[-20px] w-[40px] h-[40px] bg-white text-black rounded-full"
+on:click={prev}>‹</button>
 
-<button class="arrow left" on:click={prev}>‹</button>
-
-<div class="slider">
+<div class="flex gap-[25px] overflow-hidden">
 
 {#each related.slice(relatedIndex,relatedIndex+3) as r}
 
-<div class="recCard">
+<div class="bg-white text-black p-[16px] rounded-[12px] w-[260px] transition hover:-translate-y-1">
 
-<img src="/images/freshie.png">
+<img src="/images/freshie.png" class="w-full rounded-[8px]">
 
 <small>March 12, 2026</small>
 
-<h4>{r.title}</h4>
+<h4 class="font-heading">{r.title}</h4>
 
 <p>
 FreshieCon 2025 was held at Pasig City Science High School gathering
@@ -388,27 +176,28 @@ newly admitted Pascians.
 
 </div>
 
-<button class="arrow right" on:click={next}>›</button>
+<button
+class="absolute top-1/2 -translate-y-1/2 right-[-20px] w-[40px] h-[40px] bg-white text-black rounded-full"
+on:click={next}>›</button>
 
 </div>
 
 
 
+<div class="mt-[70px] bg-white rounded-[22px] p-[40px] flex gap-[30px] items-center">
 
-<div class="author">
-
-<img src="/images/freshie.png">
+<img src="/images/freshie.png" class="w-[150px] rounded-[10px]">
 
 <div>
 
-<h3><b>WYNONA VENTURA</b></h3>
+<h3 class="font-heading mb-[8px]"><b>WYNONA VENTURA</b></h3>
 
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat
 mauris non consectetur auctor.
 </p>
 
-<a>More from Wynona Ventura</a>
+<a class="underline cursor-pointer">More from Wynona Ventura</a>
 
 </div>
 
