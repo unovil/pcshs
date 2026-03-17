@@ -65,3 +65,7 @@ If you would like to contribute to this project, please follow these guidelines:
 ### Administration
 
 ![Administration](./docs/administration.png)
+
+### School Information
+
+![School Information](./docs/about-school.png)
