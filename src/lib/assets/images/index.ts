@@ -4,6 +4,7 @@ import lab from "./lab.png";
 import commencement from "./commencement.webp";
 import schoolTrees from "./school_trees.webp";
 import schoolYellow from "./school_yellow.png";
+import research from "./research.png";
 
 export {
     school,
@@ -11,5 +12,6 @@ export {
     lab,
     schoolTrees,
     commencement,
-    schoolYellow
+    schoolYellow,
+    research
 }
