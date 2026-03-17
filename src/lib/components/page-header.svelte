@@ -1,7 +1,7 @@
 <script lang="ts">
   import { school } from "$lib/assets/images";
   import { concentricBlue, concentricYellow } from "$lib/assets/abstract";
-  let { title, img = null }: { title: string; img: string | null } = $props();
+  let { title, img }: { title: string; img?: string } = $props();
 </script>
 
 {#if !img}

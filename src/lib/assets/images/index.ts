@@ -2,10 +2,14 @@ import school from './school.jpg';
 import sportsfest from './sportsfest.jpg';
 import lab from "./lab.png";
 import commencement from "./commencement.webp";
+import schoolTrees from "./school_trees.webp";
+import schoolYellow from "./school_yellow.png";
 
 export {
     school,
     sportsfest,
     lab,
-    commencement
+    schoolTrees,
+    commencement,
+    schoolYellow
 }
