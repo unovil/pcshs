@@ -18,14 +18,14 @@
       </div>
     </div>
     <div class="flex flex-col gap-6 pt-2 *:mr-auto">
-      <a href="">PASCIAN</a>
-      <a href="">CAMPUS BULLETIN</a>
-      <a href="">ACADEMIC POLICY</a>
+      <a href="" class="link-underline">PASCIAN</a>
+      <a href="" class="link-underline">CAMPUS BULLETIN</a>
+      <a href="" class="link-underline">ACADEMIC POLICY</a>
     </div>
     <div class="flex flex-col gap-6 pt-2 *:mr-auto">
-      <a href={resolve("/campus-map")}>CAMPUS MAP</a>
-      <a href="">ACADEMIC CALENDAR</a>
-      <a href="">ADMISSION</a>
+      <a href={resolve("/campus-map")} class="link-underline">CAMPUS MAP</a>
+      <a href="" class="link-underline">ACADEMIC CALENDAR</a>
+      <a href="" class="link-underline">ADMISSION</a>
     </div>
   </div>
 
@@ -49,7 +49,7 @@
       <div>
         <Globe class="w-4" />
         <span>
-          <a href="https://facebook.com/pcshs.edu" target="_blank" rel="noopener noreferrer">facebook.com/pcshs.edu</a>
+          <a href="https://facebook.com/pcshs.edu" target="_blank" rel="noopener noreferrer" class="link-underline">facebook.com/pcshs.edu</a>
         </span>
       </div>
     </div>
