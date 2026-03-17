@@ -73,3 +73,7 @@ If you would like to contribute to this project, please follow these guidelines:
 ### Curriculum
 
 ![Curriculum](./docs/curriculum.png)
+
+### Academic Policy
+
+![Academic Policy](./docs/academic-policy.png)

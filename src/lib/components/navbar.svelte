@@ -97,7 +97,7 @@
               <a href={resolve("/curriculum")} class="uppercase font-body text-sm link-underline">Curriculum</a>
               <a href="" class="uppercase font-body text-sm link-underline">Research</a>
               <a href="" class="uppercase font-body text-sm link-underline">Academic Calendar</a>
-              <a href="" class="uppercase font-body text-sm link-underline">Academic Policy</a>
+              <a href={resolve("/academic-policy")} class="uppercase font-body text-sm link-underline">Academic Policy</a>
             </div>
 
             <div class="flex flex-col gap-1">
