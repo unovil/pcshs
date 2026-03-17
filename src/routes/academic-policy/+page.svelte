@@ -129,7 +129,7 @@
 
 <div class="relative flex flex-row px-15 py-20 overflow-hidden">
 	<img src={concentricBlueSemiFadeRight} alt="Abstract Blue" class="absolute pointer-events-none cursor-none rotate-215 h-[130%] left-0 top-1/2 -translate-x-1/3 -translate-y-1/2">
-	<div class="relative z-10 ml-auto w-7/12 flex flex-col gap-5 text-justify">
+	<div class="relative ml-auto w-7/12 flex flex-col gap-5 text-justify">
 		<h1 class="uppercase text-5xl font-heading font-bold mb-2 text-school-blue">Student Awards</h1>
 		<p>The awards committee is created, and its membership is appointed by the Principal. The committee takes into consideration all aspects of the nominees/candidates for honors and other awards in accordance with existing criteria. Criteria may be revised, however, to consider the needs of the moment. Central to the award is the character of the awardees. Students with grades below 80 in any subject in any quarter are disqualified for honor and other awards for the entire school year where it is applicable. The decision of the awards committee is final.</p>
 		<p class="italic">All candidates for honors must be of good moral character and have not been subjected to any disciplinary actions within the current School Year (Enclosure to DepEd Order No. 74, s. 2012).....the awards also aim to nurture the formation of the learners' values and attitudes anchored on the core values of the Department of Education (Enclosure to DepEd Order No. 36, s. 2016).</p>
