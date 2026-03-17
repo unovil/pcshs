@@ -1,6 +1,6 @@
 # Pasig City Science High School
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/unovil/pcshs/node.js.yml)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/unovil/pcshs/node.js.yml) [![Repo Updated Badge](https://badges.strrl.dev/updated/unovil/pcshs)](https://badges.strrl.dev)
 
 This is the official repository of the Pasig City Science High School (PCSHS) website made by the students of Grade 12 - Dubins (Batch 16)! Note that this repository is still a work in progress and may contain some bugs. If you have any suggestions or feedback, please feel free to open an issue or submit a pull request.
 
