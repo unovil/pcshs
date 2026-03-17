@@ -13,3 +13,17 @@
     --color-school-yellow: #e1bd23;
     --color-school-indigo: #5a4fb2;
 }
+
+@layer components {
+    .link-underline {
+        @apply relative inline-block mr-auto;
+
+        &::after {
+            @apply content-[''] absolute left-0 bottom-0 h-0.5 w-full origin-left scale-x-0 bg-current transition-transform duration-200;
+        }
+
+        &:hover::after {
+            @apply scale-x-100;
+        }
+    }
+}

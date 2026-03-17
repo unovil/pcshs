@@ -56,76 +56,61 @@
       ></button>
 
       <div 
-        class="absolute right-4 top-full mt-2 z-50 bg-school-indigo text-white rounded shadow-lg p-10
-        [&_a]:relative
-        [&_a]:inline-block
-        [&_a]:mr-auto
-        [&_a::after]:content-['']
-        [&_a::after]:absolute
-        [&_a::after]:left-0
-        [&_a::after]:bottom-0
-        [&_a::after]:h-0.5
-        [&_a::after]:w-full
-        [&_a::after]:origin-left
-        [&_a::after]:scale-x-0
-        [&_a::after]:bg-current
-        [&_a::after]:transition-transform
-        [&_a::after]:duration-200
-        [&_a:hover::after]:scale-x-100"
+        class="absolute right-4 top-full mt-2 z-50 bg-school-indigo text-white rounded shadow-lg p-10"
         in:fly={{ y: -10, duration: 200 }}
         out:fly={{ y: -10, duration: 150 }}
       >
-        <div class="grid grid-cols-2 gap-10">
+        <div class="grid grid-cols-2 gap-10 [&_a]:link-underline">
           <div class="flex flex-col gap-5 items-start *:w-full">
             <div class="flex flex-col gap-1">
               <span class="font-bold text-xl font-heading">About</span>
               <hr>
-              <a href={resolve("/school-information")} class="uppercase font-body text-sm">School information</a>
-              <a href={resolve("/administration")} class="uppercase font-body text-sm">Administration</a>
-              <a href={resolve("/campus-map")} class="uppercase font-body text-sm">Campus Map</a>
+              <a href={resolve("/school-information")} class="uppercase font-body text-sm link-underline">School information</a>
+              <a href={resolve("/administration")} class="uppercase font-body text-sm link-underline">Administration</a>
+              <a href={resolve("/campus-map")} class="uppercase font-body text-sm link-underline">Campus Map</a>
             </div>
 
             <div class="flex flex-col gap-1">
-              <a href="/about" class="font-bold text-xl font-heading">Pascian</a>
+              <a href="/about" class="font-bold text-xl font-heading link-underline">Pascian</a>
               <hr>
-              <a href="" class="uppercase font-body text-sm">Faculty & Staff</a>
-              <a href="" class="uppercase font-body text-sm">Student Government (SSLG)</a>
-              <a href="" class="uppercase font-body text-sm">Clubs & Organizations</a>
-              <a href="" class="uppercase font-body text-sm">Alumni</a>
+              <a href="" class="uppercase font-body text-sm link-underline">Faculty & Staff</a>
+              <a href="" class="uppercase font-body text-sm link-underline">Student Government (SSLG)</a>
+              <a href="" class="uppercase font-body text-sm link-underline">Clubs & Organizations</a>
+              <a href="" class="uppercase font-body text-sm link-underline">Alumni</a>
             </div>
 
             <div class="flex flex-col gap-1">
               <span class="font-bold text-xl font-heading">Admission</span>
               <hr>
-              <a href="" class="uppercase font-body text-sm">Guidelines & Requirements</a>
-              <a href="" class="uppercase font-body text-sm">List of Passers</a>
+              <a href="" class="uppercase font-body text-sm link-underline">Guidelines & Requirements</a>
+              <a href="" class="uppercase font-body text-sm link-underline">List of Passers</a>
             </div>
           </div>
           <div class="flex flex-col gap-5 items-start *:w-full">
             <div class="flex flex-col gap-1">
-              <a href="/about" class="font-bold text-xl font-heading">E-Library</a>
+              <a href="/about" class="font-bold text-xl font-heading link-underline">E-Library</a>
             </div>
 
             <div class="flex flex-col gap-1">
               <span class="font-bold text-xl font-heading">Academics</span>
               <hr>
-              <a href="" class="uppercase font-body text-sm">Curriculum</a>
-              <a href="" class="uppercase font-body text-sm">Research</a>
-              <a href="" class="uppercase font-body text-sm">Academic Calendar</a>
-              <a href="" class="uppercase font-body text-sm">Academic Policy</a>
+              <a href={resolve("/curriculum")} class="uppercase font-body text-sm link-underline">Curriculum</a>
+              <a href="" class="uppercase font-body text-sm link-underline">Research</a>
+              <a href="" class="uppercase font-body text-sm link-underline">Academic Calendar</a>
+              <a href="" class="uppercase font-body text-sm link-underline">Academic Policy</a>
             </div>
 
             <div class="flex flex-col gap-1">
               <span class="font-bold text-xl font-heading">Events & News</span>
               <hr>
-              <a href="" class="uppercase font-body text-sm">Campus Bulletin</a>
+              <a href="" class="uppercase font-body text-sm link-underline">Campus Bulletin</a>
             </div>
             
             <div class="flex flex-col gap-1">
               <span class="font-bold text-xl font-heading">Contact</span>
               <hr>
-              <a href="" class="uppercase font-body text-sm">Contact Information</a>
-              <a href="" class="uppercase font-body text-sm">FAQs</a>
+              <a href="" class="uppercase font-body text-sm link-underline">Contact Information</a>
+              <a href="" class="uppercase font-body text-sm link-underline">FAQs</a>
             </div>
           </div>
         </div>
