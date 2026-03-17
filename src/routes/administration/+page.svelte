@@ -52,7 +52,7 @@
 </script>
 
 <main class="min-h-screen bg-white font-body overflow-x-hidden">
-  <PageHeader title="Administration" img={null} />
+  <PageHeader title="Administration" />
 
   <section class="relative bg-cover bg-center py-20 px-4 min-h-[50vh]" style="background-image:url({adminBg});">
     <div class="absolute inset-0 bg-white/65"></div>

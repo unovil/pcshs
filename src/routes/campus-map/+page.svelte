@@ -28,7 +28,7 @@
   }
 </script>
 
-<PageHeader title="Campus Map" img={null} />
+<PageHeader title="Campus Map" />
 
 <div class="relative min-h-screen overflow-hidden ">
 

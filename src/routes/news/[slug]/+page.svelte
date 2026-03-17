@@ -8,7 +8,7 @@
   const article = $derived(news[Number(params.slug)]);
 </script>
 
-<PageHeader title="Campus Bulletin" img={null}/>
+<PageHeader title="Campus Bulletin"/>
 
 <div class="bg-linear-to-b from-[#d0d1e2] to-[#6e6b8e] min-h-screen py-30 px-30">
   <div class="p-24 rounded-lg shadow-lg bg-white flex flex-col gap-10 max-w-5xl mx-auto">
