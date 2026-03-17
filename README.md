@@ -78,3 +78,6 @@ If you would like to contribute to this project, please follow these guidelines:
 
 ![Academic Policy](./docs/academic-policy.png)
 
+### Research
+
+![Research](./docs/research.png)
