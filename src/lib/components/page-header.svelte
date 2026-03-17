@@ -21,7 +21,7 @@
 {:else}
 
 <div style:background-image="url({img})" class="bg-cover bg-center">
-  <div class="flex flex-col">
+  <div class="flex flex-col px-16 pb-12 pt-24 relative overflow-hidden bg-radial from-transparent to-black/60">
     <div class="font-heading text-white text-8xl z-0 relative">
       <strong class="block">{title}</strong>
     </div>
