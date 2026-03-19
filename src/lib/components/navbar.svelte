@@ -65,25 +65,25 @@
             <div class="flex flex-col gap-1">
               <span class="font-bold text-xl font-heading">About</span>
               <hr>
-              <a href={resolve("/school-information")} class="uppercase font-body text-sm link-underline">School information</a>
-              <a href={resolve("/administration")} class="uppercase font-body text-sm link-underline">Administration</a>
-              <a href={resolve("/campus-map")} class="uppercase font-body text-sm link-underline">Campus Map</a>
+              <a href={resolve("/school-information")} class="uppercase text-sm link-underline">School information</a>
+              <a href={resolve("/administration")} class="uppercase text-sm link-underline">Administration</a>
+              <a href={resolve("/campus-map")} class="uppercase text-sm link-underline">Campus Map</a>
             </div>
 
             <div class="flex flex-col gap-1">
               <a href="/about" class="font-bold text-xl font-heading link-underline">Pascian</a>
               <hr>
-              <a href="" class="uppercase font-body text-sm link-underline">Faculty & Staff</a>
-              <a href="" class="uppercase font-body text-sm link-underline">Student Government (SSLG)</a>
-              <a href="" class="uppercase font-body text-sm link-underline">Clubs & Organizations</a>
-              <a href="" class="uppercase font-body text-sm link-underline">Alumni</a>
+              <a href="" class="uppercase text-sm link-underline">Faculty & Staff</a>
+              <a href="" class="uppercase text-sm link-underline">Student Government (SSLG)</a>
+              <a href="" class="uppercase text-sm link-underline">Clubs & Organizations</a>
+              <a href="" class="uppercase text-sm link-underline">Alumni</a>
             </div>
 
             <div class="flex flex-col gap-1">
               <span class="font-bold text-xl font-heading">Admission</span>
               <hr>
-              <a href="" class="uppercase font-body text-sm link-underline">Guidelines & Requirements</a>
-              <a href="" class="uppercase font-body text-sm link-underline">List of Passers</a>
+              <a href="" class="uppercase text-sm link-underline">Guidelines & Requirements</a>
+              <a href="" class="uppercase text-sm link-underline">List of Passers</a>
             </div>
           </div>
           <div class="flex flex-col gap-5 items-start *:w-full">
@@ -94,23 +94,23 @@
             <div class="flex flex-col gap-1">
               <span class="font-bold text-xl font-heading">Academics</span>
               <hr>
-              <a href={resolve("/curriculum")} class="uppercase font-body text-sm link-underline">Curriculum</a>
-              <a href={resolve("/research")} class="uppercase font-body text-sm link-underline">Research</a>
-              <a href="" class="uppercase font-body text-sm link-underline">Academic Calendar</a>
-              <a href={resolve("/academic-policy")} class="uppercase font-body text-sm link-underline">Academic Policy</a>
+              <a href={resolve("/curriculum")} class="uppercase text-sm link-underline">Curriculum</a>
+              <a href={resolve("/research")} class="uppercase text-sm link-underline">Research</a>
+              <a href="" class="uppercase text-sm link-underline">Academic Calendar</a>
+              <a href={resolve("/academic-policy")} class="uppercase text-sm link-underline">Academic Policy</a>
             </div>
 
             <div class="flex flex-col gap-1">
               <span class="font-bold text-xl font-heading">Events & News</span>
               <hr>
-              <a href="" class="uppercase font-body text-sm link-underline">Campus Bulletin</a>
+              <a href="" class="uppercase text-sm link-underline">Campus Bulletin</a>
             </div>
             
             <div class="flex flex-col gap-1">
               <span class="font-bold text-xl font-heading">Contact</span>
               <hr>
-              <a href="" class="uppercase font-body text-sm link-underline">Contact Information</a>
-              <a href="" class="uppercase font-body text-sm link-underline">FAQs</a>
+              <a href="" class="uppercase text-sm link-underline">Contact Information</a>
+              <a href="" class="uppercase text-sm link-underline">FAQs</a>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@
   import { MapPin, Phone, Globe } from "@lucide/svelte";
 </script>
 
-<div class="px-15 py-10 bg-school-blue flex flex-col gap-5 text-white font-body">
+<div class="px-15 py-10 bg-school-blue flex flex-col gap-5 text-white">
   <div class="grid grid-cols-5 gap-10">
     <div class="flex flex-row gap-7 items-center col-span-3 pr-10">
       <img src={logo.pcshs} alt="School Logo" class="max-h-32">
