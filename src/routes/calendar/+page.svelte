@@ -9,7 +9,7 @@
 <div class="p-15 columns-2 gap-8 bg-linear-135 from-school-blue/80 via-school-blue-light/50 to-school-yellow/80">
 
   {#each monthEvents as month (month.month)}
-  <div class="break-inside-avoid mb-8 flex flex-col gap-3 p-10 rounded-lg bg-linear-to-r from-school-blue to-[#1a276d]">
+  <div class="break-inside-avoid mb-8 flex flex-col gap-3 p-10 card">
     <h2 class="text-4xl uppercase text-school-yellow font-bold font-heading">{month.month}</h2>
     <table class="w-full table-fixed border-separate border-spacing-x-2">
       <tbody>

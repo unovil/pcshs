@@ -26,4 +26,8 @@
             @apply scale-x-100;
         }
     }
+
+    .card {
+        @apply rounded-lg bg-linear-to-r from-school-blue to-[#1a276d];
+    }
 }
