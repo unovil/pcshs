@@ -6,6 +6,7 @@ import lineup from "./lineup.png";
 import pasigSeal from "./pasig_seal.png";
 import pcshs from "./pcshs.png";
 import sdoPasig from "./sdo_pasig.svg";
+import sslg from "./sslg.png";
 
 export {
     depedBp,
@@ -15,5 +16,6 @@ export {
     lineup,
     pasigSeal,
     pcshs,
-    sdoPasig
+    sdoPasig,
+    sslg
 }

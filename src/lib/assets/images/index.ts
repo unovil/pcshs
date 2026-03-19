@@ -6,6 +6,8 @@ import schoolTrees from "./school_trees.webp";
 import schoolYellow from "./school_yellow.png";
 import research from "./research.png";
 import calendar from "./calendar.png";
+import pascianFront from "./pascian_front.png";
+import pascianBack from "./pascian_back.png";
 
 export {
     calendar,
@@ -15,5 +17,8 @@ export {
     schoolTrees,
     commencement,
     schoolYellow,
-    research
+    research,
+    pascianBack,
+    pascianFront
+    
 }
