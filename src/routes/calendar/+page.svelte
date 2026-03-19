@@ -14,7 +14,7 @@
     <table class="w-full table-fixed border-separate border-spacing-x-2">
       <tbody>
       {#each Object.entries(month.events) as [date, events] (date)}
-        <tr class="text-white">
+        <tr class="text-white align-top">
           <td class="border-r-2 w-1/6">{date}</td>
           <td class="w-5/6">{events.join("; ")}</td>
         </tr>
