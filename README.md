@@ -85,3 +85,7 @@ If you would like to contribute to this project, please follow these guidelines:
 ### Academic Calendar
 
 ![Calendar](./docs/calendar.png)
+
+### E-Library
+
+![E-Library](./docs/library.png)
