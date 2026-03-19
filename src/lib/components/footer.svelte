@@ -20,11 +20,11 @@
     <div class="flex flex-col gap-6 pt-2 *:mr-auto">
       <a href="" class="link-underline">PASCIAN</a>
       <a href="" class="link-underline">CAMPUS BULLETIN</a>
-      <a href="" class="link-underline">ACADEMIC POLICY</a>
+      <a href={resolve("/academic-policy")} class="link-underline">ACADEMIC POLICY</a>
     </div>
     <div class="flex flex-col gap-6 pt-2 *:mr-auto">
       <a href={resolve("/campus-map")} class="link-underline">CAMPUS MAP</a>
-      <a href="" class="link-underline">ACADEMIC CALENDAR</a>
+      <a href={resolve("/calendar")} class="link-underline">ACADEMIC CALENDAR</a>
       <a href="" class="link-underline">ADMISSION</a>
     </div>
   </div>

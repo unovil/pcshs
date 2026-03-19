@@ -96,7 +96,7 @@
               <hr>
               <a href={resolve("/curriculum")} class="uppercase text-sm link-underline">Curriculum</a>
               <a href={resolve("/research")} class="uppercase text-sm link-underline">Research</a>
-              <a href="" class="uppercase text-sm link-underline">Academic Calendar</a>
+              <a href={resolve("/calendar")} class="uppercase text-sm link-underline">Academic Calendar</a>
               <a href={resolve("/academic-policy")} class="uppercase text-sm link-underline">Academic Policy</a>
             </div>
 
