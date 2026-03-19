@@ -9,14 +9,14 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <div 
-	class="relative flex flex-col h-screen">
+	class="relative flex flex-col h-screen font-body">
 	<header class="fixed top-0 w-full z-10">
 		<Navbar />
 	</header>
-  <div class="my-auto">
+  <div class="my-auto font-body">
 		{@render children()}
 	</div>
-	<footer class="w-full">
+	<footer class="w-full font-body">
 		<Footer />
 	</footer>
 </div>
