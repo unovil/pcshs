@@ -30,7 +30,7 @@
   </ol>
 </div>
 
-<div class="m-15 px-15 py-12 text-white rounded-lg bg-linear-to-r from-school-blue to-[#1a276d] flex flex-col gap-8">
+<div class="m-15 px-15 py-12 text-white rounded-lg card flex flex-col gap-8">
   <h1 class="uppercase font-heading font-bold text-5xl">Matatag Curriculum</h1>
   <p class="text-justify">The MATATAG Curriculum is the new DepEd K-10 basic education program of the Department of Education. It officially began in August 2023. The MATATAG Curriculum came to fruition as a new framework to the previous basic education program (K to 12). The overarching goal of MATATAG is to remedy the learning poverty gaps in foundational learning while desiring to lessen the congested curriculum. It prioritizes the development of fundamental literacy and numeracy skills, instills values of nationalism, and builds modern competencies. Implementation is taking place on a systematic and phased approach, with the rollout of the program beginning in School Year 2024-2025.</p>
 </div>
