@@ -7,7 +7,7 @@
 
 <PageHeader title="Academic Policy" />
 
-<div class="p-15 flex flex-row gap-15 font-body relative overflow-hidden">
+<div class="p-15 flex flex-row gap-15 relative overflow-hidden">
 
 	<img src={concentricYellowSemiFadeLeft} alt="Abstract Yellow" class="absolute bottom-0 right-0 pointer-events-none cursor-none translate-x-1/3 translate-y-5/12 scale-175">
 
@@ -79,7 +79,7 @@
 	</div>
 </div>
 
-<div class="bg-school-blue relative p-15 text-white flex flex-row gap-20 overflow-hidden font-body">
+<div class="bg-school-blue relative p-15 text-white flex flex-row gap-20 overflow-hidden">
 	<img src={concentricWhiteSemiFadeUp} alt="Abstract White" class="absolute pointer-events-none cursor-none left-0 top-1/2 -translate-x-1/2 -translate-y-5/12">
 
 	<div class="flex flex-col gap-3 text-justify flex-1/2">
@@ -99,7 +99,7 @@
 	</div>
 </div>
 
-<div class="flex flex-col gap-20 bg-school-indigo text-white font-body relative overflow-hidden p-15">
+<div class="flex flex-col gap-20 bg-school-indigo text-white relative overflow-hidden p-15">
 	<div class="absolute inset-0 pointer-events-none cursor-none">
 		<img src={concentricBlueSemiFadeRight} alt="Abstract Blue" class="absolute right-0 top-0 translate-x-1/3 -translate-y-1/2 rotate-215">
 		<img src={concentricBlueSemiFadeRight} alt="Abstract Blue" class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/3">

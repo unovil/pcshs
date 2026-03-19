@@ -16,7 +16,7 @@
     <h1 class="font-bold font-heading text-7xl">{article.title}</h1>
 
     <div>
-      <div class="font-body grid grid-cols-2 place-content-between w-full">
+      <div class="grid grid-cols-2 place-content-between w-full">
         <span class="uppercase text-start">{article.date}</span>
         <span class="uppercase text-end">{article.author}</span>
       </div>
@@ -28,7 +28,7 @@
     {/if}
 
     {#each article.content as paragraph, index (index)}
-      <p class="font-body text-lg leading-relaxed text-justify">{paragraph}</p>
+      <p class="text-lg leading-relaxed text-justify">{paragraph}</p>
     {/each}
 
   </div>
